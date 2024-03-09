@@ -1,0 +1,15 @@
+Use this with EO for Wallace Park, TX
+
+lat: 32° 3' 26.0928"
+long: -97° 7' 20.157"
+Alt: 193m or 633.202ft
+
+
+Event (ΔT=69.1s; alt.=186m)	Date	Time (UT)	Alt	Azi	P	V	LC
+Start of partial eclipse (C1) : 	2024/04/08	17:21:27.3	+60.8°	143.2°	227°	03.4	 
+Start of total eclipse (C2) : 	2024/04/08	18:38:46.1	+65.5°	185.2°	043°	10.7	
+-0.3s
+Maximum eclipse (MAX) : 	2024/04/08	18:40:57.3	+65.4°	186.5°	137°	07.6	 
+End of total eclipse (C3) : 	2024/04/08	18:43:08.4	+65.4°	187.8°	231°	04.5	
+-0.2s
+End of partial eclipse (C4) : 	2024/04/08	20:01:19.8	+57.7°	225.9°	048°	11.7	 
