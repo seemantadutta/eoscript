@@ -1,5 +1,8 @@
 import copy
+import datetime
 import dateutil.parser
+
+from .exposure import Exposure
 
 
 class Quality:
@@ -12,11 +15,22 @@ class Dur:
     hour = 60 * minute
 
 
+def hours_minuts_seconds(total_seconds):
+    if isinstance(total_seconds, datetime.timedelta):
+        total_seconds = total_seconds.total_seconds()
+    total_seconds = abs(total_seconds)
+    hours = int(total_seconds / Dur.hour)
+    total_seconds -= Dur.hour * hours
+    minutes = int(total_seconds / Dur.minute)
+    seconds = total_seconds - Dur.minute * minutes
+    return f"{hours:02d}:{minutes:02d}:{seconds:06.3f}"
+
+
 class Script:
-    def __init__(self, c1=None, c2=None, max=None, c3=None, c4=None, minimum_time_step=3.0):
-        self._minimum_time_step = minimum_time_step
+    def __init__(self, c1=None, c2=None, max=None, c3=None, c4=None, min_time_step=3.0):
+        self._min_time_step = min_time_step
         self._camera = None
-        self._comment = None
+        self._comment = ""
         self._events = []
         self._exposure = None
         self._fstop = None
@@ -66,6 +80,14 @@ class Script:
         self._exposure = value
 
     @property
+    def file_comment(self):
+        return None
+
+    @file_comment.setter
+    def file_comment(self, comment):
+        self._events.append(comment)
+
+    @property
     def fstop(self):
         return self._fstop
 
@@ -91,12 +113,30 @@ class Script:
         self._iso = value
 
     @property
-    def file_comment(self):
-        return None
+    def min_time_step(self):
+        return self._min_time_step
 
-    @file_comment.setter
-    def file_comment(self, comment):
-        self._events.append(comment)
+    @min_time_step.setter
+    def min_time_step(self, value):
+        self._min_time_step = value
+
+    @property
+    def offset(self):
+        return self._offset
+
+    @offset.setter
+    def offset(self, value):
+        self._offset = value
+
+    @property
+    def phase(self):
+        return self._phase
+
+    @phase.setter
+    def phase(self, value):
+        assert value in {"C1", "C2", "MAX", "C3", "C4"}
+        self._phase = value
+        self._offset = 0
 
     @property
     def release_command(self):
@@ -107,14 +147,20 @@ class Script:
         assert command in {"TAKEPIC", "RELEASE"}
         self._release_command = command
 
+    def banner(self, message, width=120):
+        self.file_comment = f"#{width * '-'}"
+        self.file_comment = f"# {message}"
+        self.file_comment = f"#{width * '-'}"
+
     def capture(self, abs_time=None, exposure=None):
         # A phase must have been selected.
         assert self._phase, "Phase hasn't been specified!"
+        assert self._camera, "Camera hasn't been specified!"
+        assert self._fstop, "F-Stop hasn't been specified!"
+        assert self._iso, "ISO hasn't been specified!"
 
         if isinstance(abs_time, str):
-            assert abs_time.endswith("PM") or abs_time.endswith("AM"), f"Unexpected time: {abs_time}"
-            assert len(abs_time) in {len("HH:MM:SS PM"),len("HH:MM:SS.0 PM")}, f"Unexpected time: {abs_time}"
-            assert self._phase_to_time, 'To use HH:MM:SS times, please pass phase times to, i.e. Script(c1 = "YYYY/MM/DD HH:MM:SS.f PM", ...)'
+            assert self._phase_to_time, 'To use HH:MM:SS times, please pass phase times to, i.e. Script(c1 = "YYYY/MM/DD HH:MM:SS.f", ...)'
             phase = self._phase_to_time[self._phase]
             time = dateutil.parser.parse(f"{phase.year}/{phase.month}/{phase.day} {abs_time}")
             self.offset = (time - phase).total_seconds()
@@ -136,11 +182,14 @@ class Script:
             self._comment,
         ])
 
-        self.offset += float(exposure) + self._minimum_time_step
+        self.offset += float(exposure) + self._min_time_step
 
     def send_exposure(self):
         # A phase must have been selected.
         assert self._phase, "Phase hasn't been specified!"
+        assert self._camera, "Camera hasn't been specified!"
+        assert self._fstop, "F-Stop hasn't been specified!"
+        assert self._iso, "ISO hasn't been specified!"
         exposure = copy.copy(self._exposure)
         self._events.append([
             "SETEXP",
@@ -152,7 +201,7 @@ class Script:
             self._iso,
             self._mirror_lock_up,
             "N",
-            self._comment,
+            "sending all camera exposure settings via USB",
         ])
         self._incremental = "Y"
 
@@ -164,10 +213,10 @@ class Script:
         """
         assert num_exposures % 2 == 1, f"num_exposures must be odd, got {num_exposures}"
         assert num_exposures >= 3, f"num_exposures must be >= 3, got {num_exposures}"
-        self.incremental = "N"
 
         center = self._exposure
-        exposures = [center]
+        running_ev_stops = 0
+        exposures = [(center, running_ev_stops)]
 
         # How many faster or slower are left?
         num_exposures -= 1
@@ -176,37 +225,27 @@ class Script:
         exposure = copy.copy(center)
         for i in range(num_exposures):
             exposure -= ev_step
-            exposures.append(exposure)
+            running_ev_stops -= ev_step
+            exposures.append((exposure, running_ev_stops))
 
         # Slower exposures.
+        running_ev_stops = 0
         exposure = copy.copy(center)
         for i in range(num_exposures):
             exposure += ev_step
-            exposures.append(exposure)
+            running_ev_stops += ev_step
+            exposures.append((exposure, running_ev_stops))
+
         exposures = sorted(exposures)
-
-        self.incremental = "N"
-        self.capture(exposure=exposures[0])
-        self.incremental = "Y"
-        for exposure in exposures[1:]:
+        comment = str(self.comment)
+        for i, (exposure, running_ev_stops) in enumerate(exposures):
+            if i == 0:
+                self.incremental = "N"
+            else:
+                self.incremental = "Y"
+            self.comment = f"{comment} {running_ev_stops:+7.3f} EV Stops"
             self.capture(exposure=exposure)
-
-    @property
-    def offset(self):
-        return self._offset
-
-    @offset.setter
-    def offset(self, value):
-        self._offset = value
-
-    @property
-    def phase(self):
-        return self._phase
-
-    @phase.setter
-    def phase(self, value):
-        assert value in {"C1", "C2", "MAX", "C3", "C4"}
-        self._phase = value
+        self.comment = comment
 
     def __str__(self):
         """
@@ -223,6 +262,20 @@ class Script:
             out += f"MAX, {self._max.strftime(DATE_FMT)}\n"
             out += f"C3,  {self._c3.strftime(DATE_FMT)}\n"
             out += f"C4,  {self._c4.strftime(DATE_FMT)}\n"
+
+            # Compute max offsets.
+            c1_c2_duration = hours_minuts_seconds(self._c2 - self._c1)
+            c2_max_duration = hours_minuts_seconds(self._max - self._c2)
+            max_c3_duration = hours_minuts_seconds(self._c3 - self._max)
+            c3_c4_duration = hours_minuts_seconds(self._c4 - self._c3)
+
+            out += "#\n"
+            out += f"# C1:C2  duration: {c1_c2_duration}\n"
+            out += f"# C2:MAX duration: {c2_max_duration}\n"
+            out += f"# MAX:C3 duration: {max_c3_duration}\n"
+            out += f"# C3:4   duration: {c3_c4_duration}\n"
+            out += "#\n"
+
         out += "#Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment\n"
 
         for event in self._events:
@@ -245,13 +298,9 @@ class Script:
                 mlu = mirror_lock_up
                 quality = self._qualiy
                 sign = "-" if time_offset < 0 else "+"
-                time_offset = abs(time_offset)
-                hours = int(time_offset / Dur.hour)
-                time_offset -= Dur.hour * hours
-                minutes = int(time_offset / Dur.minute)
-                seconds = time_offset - Dur.minute * minutes
+                hms = hours_minuts_seconds(time_offset)
                 exposure = f"{exposure}"
-                out += f"{command},{phase},{sign},{hours:02d}:{minutes:02d}:{seconds:06.3f},{camera},{exposure:6s},{fstop:4.1f},{iso:4d},{mlu},{quality},None,{incremental},{comment}\n"
+                out += f"{command},{phase},{sign},{hms},{camera},{exposure:6s},{fstop:4.1f},{iso:4d},{mlu},{quality},None,{incremental},{comment}\n"
         return out
 
     def save(self, filename):
