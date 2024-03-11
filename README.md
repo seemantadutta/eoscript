@@ -145,13 +145,14 @@ by specifing `HH:MM:SS`:
 
 The above produces this output file:
 
-    # Comment out these event times to use GPS time on the laptop
-    #Event,Date,Time
-    C1,  2024/04/08,17:21:27.500000
-    C2,  2024/04/08,18:38:46.600000
-    MAX, 2024/04/08,18:40:58.000000
-    C3,  2024/04/08,18:43:09.400000
-    C4,  2024/04/08,20:01:20.900000
+    # Keep these commented out to use the computed contact times of the computer.
+    # Add a GPS receiver to get < 1s accurate computed contact times.
+    # Event, Date, Time
+    # C1,  2024/04/08,17:21:27.500000
+    # C2,  2024/04/08,18:38:46.600000
+    # MAX, 2024/04/08,18:40:58.000000
+    # C3,  2024/04/08,18:43:09.400000
+    # C4,  2024/04/08,20:01:20.900000
     #
     # C1:C2  duration: 01:17:19.100
     # C2:MAX duration: 00:02:11.400
@@ -173,7 +174,7 @@ The above produces this output file:
     TAKEPIC,C1,+,01:07:03.500,Nikon Z7,1/400 , 8.0, 800,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
     TAKEPIC,C1,+,01:15:18.500,Nikon Z7,1/400 , 8.0, 800,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
 
-Note the contact times are now included, and conviently, the durations between the contact times:
+Note the contact times are now included in comments, and also note the durations between the contact times:
 
     # C1:C2  duration: 01:17:19.100
     # C2:MAX duration: 00:02:11.400

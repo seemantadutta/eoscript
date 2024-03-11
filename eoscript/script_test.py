@@ -32,7 +32,7 @@ class TestExposure(unittest.TestCase):
         script.capture()
 
         expected = textwrap.dedent("""\
-            #Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment
+            # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
             TAKEPIC,C1,+,00:00:00.000,Nikon Z7,1/400 , 8.0, 800,0.0,RAW+F-JPG,None,N,test basics
             TAKEPIC,C1,+,00:00:03.002,Nikon Z7,1/400 , 8.0, 800,0.0,RAW+F-JPG,None,N,test basics
             TAKEPIC,C1,+,00:00:06.005,Nikon Z7,1/400 , 8.0, 800,0.0,RAW+F-JPG,None,N,test basics
@@ -62,7 +62,7 @@ class TestExposure(unittest.TestCase):
         script.capture_bracket(7, 2.0/3.0)
 
         expected = textwrap.dedent("""\
-            #Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment
+            # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
             #------------------------------------------------------------------------------------------------------------------------
             # 3x bracket in 1 EV Stops
             #------------------------------------------------------------------------------------------------------------------------
@@ -105,7 +105,7 @@ class TestExposure(unittest.TestCase):
         script.capture()
         script.capture()
         expected = textwrap.dedent("""\
-            #Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment
+            # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
             TAKEPIC,MAX,+,00:00:00.000,Nikon Z7,8     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposure
             TAKEPIC,MAX,+,00:00:11.000,Nikon Z7,8     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposure
             TAKEPIC,MAX,+,00:00:22.000,Nikon Z7,8     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposure
@@ -164,20 +164,21 @@ class TestExposure(unittest.TestCase):
         script.capture("19:59:20")
 
         expected = textwrap.dedent("""\
-            # Comment out these event times to use GPS time on the laptop
-            #Event,Date,Time
-            C1,  2024/04/08,17:21:27.500000
-            C2,  2024/04/08,18:38:46.600000
-            MAX, 2024/04/08,18:40:58.000000
-            C3,  2024/04/08,18:43:09.400000
-            C4,  2024/04/08,20:01:20.900000
+            # Keep these commented out to use the computed contact times of the computer.
+            # Add a GPS receiver to get < 1s accurate computed contact times.
+            # Event, Date, Time
+            # C1,  2024/04/08,17:21:27.500000
+            # C2,  2024/04/08,18:38:46.600000
+            # MAX, 2024/04/08,18:40:58.000000
+            # C3,  2024/04/08,18:43:09.400000
+            # C4,  2024/04/08,20:01:20.900000
             #
             # C1:C2  duration: 01:17:19.100
             # C2:MAX duration: 00:02:11.400
             # MAX:C3 duration: 00:02:11.400
             # C3:4   duration: 01:18:11.500
             #
-            #Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment
+            # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
             #------------------------------------------------------------------------------------------------------------------------
             # C1 -> C2: partials
             #------------------------------------------------------------------------------------------------------------------------
@@ -261,7 +262,7 @@ class TestExposure(unittest.TestCase):
         _diamond_ring("C3", -5.0)
 
         expected = textwrap.dedent("""\
-            #Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment
+            # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
             #------------------------------------------------------------------------------------------------------------------------
             # C2 fast exposures for diamond ring & baily's beads.
             #------------------------------------------------------------------------------------------------------------------------

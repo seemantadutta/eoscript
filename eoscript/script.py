@@ -69,7 +69,7 @@ class Script:
 
     @comment.setter
     def comment(self, value):
-        self._comment = value
+        self._comment = value.replace(",", "")
 
     @property
     def exposure(self):
@@ -77,7 +77,10 @@ class Script:
 
     @exposure.setter
     def exposure(self, value):
-        self._exposure = value
+        if isinstance(value, float):
+            self._exposure = Exposure(value)
+        else:
+            self._exposure = value
 
     @property
     def file_comment(self):
@@ -85,7 +88,10 @@ class Script:
 
     @file_comment.setter
     def file_comment(self, comment):
-        self._events.append(comment)
+        if not comment.startswith("#"):
+            self._events.append(f"# {comment}")
+        else:
+            self._events.append(comment)
 
     @property
     def fstop(self):
@@ -255,13 +261,14 @@ class Script:
         DATE_FMT = "%Y/%m/%d,%H:%M:%S.%f"
         out = ""
         if self._phase_to_time:
-            out = "# Comment out these event times to use GPS time on the laptop\n"
-            out += "#Event,Date,Time\n"
-            out += f"C1,  {self._c1.strftime(DATE_FMT)}\n"
-            out += f"C2,  {self._c2.strftime(DATE_FMT)}\n"
-            out += f"MAX, {self._max.strftime(DATE_FMT)}\n"
-            out += f"C3,  {self._c3.strftime(DATE_FMT)}\n"
-            out += f"C4,  {self._c4.strftime(DATE_FMT)}\n"
+            out = "# Keep these commented out to use the computed contact times of the computer.\n"
+            out += "# Add a GPS receiver to get < 1s accurate computed contact times.\n"
+            out += "# Event, Date, Time\n"
+            out += f"# C1,  {self._c1.strftime(DATE_FMT)}\n"
+            out += f"# C2,  {self._c2.strftime(DATE_FMT)}\n"
+            out += f"# MAX, {self._max.strftime(DATE_FMT)}\n"
+            out += f"# C3,  {self._c3.strftime(DATE_FMT)}\n"
+            out += f"# C4,  {self._c4.strftime(DATE_FMT)}\n"
 
             # Compute max offsets.
             c1_c2_duration = hours_minuts_seconds(self._c2 - self._c1)
@@ -276,7 +283,7 @@ class Script:
             out += f"# C3:4   duration: {c3_c4_duration}\n"
             out += "#\n"
 
-        out += "#Action,Date/Ref,Offset sign,Time (offset),Camera,Exposure,Aperture,ISO,MLU,Quality,Size,Incremental,Comment\n"
+        out += "# Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment\n"
 
         for event in self._events:
             if isinstance(event, str):
