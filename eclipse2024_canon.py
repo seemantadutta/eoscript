@@ -47,7 +47,7 @@ def _fast_manual_stacks(label, phase):
     script.phase = phase
     script.iso = 100
     NUM_PHOTOS_PER_STACK = 8
-    exposure = 1.0 / 15
+    exposure = 1.0 / 1000
     while exposure < 4.0:
         script.exposure = exposure
         script.offset += MIN_STEP_SLOW - MIN_STEP_FAST
@@ -58,12 +58,14 @@ def _fast_manual_stacks(label, phase):
 
         if (exposure > 1.0):
             script.offset += MIN_STEP_SLOW + 1.0
+            release_time = 0.40
         else:
             script.offset += MIN_STEP_SLOW
+            release_time = 0.20
 
         for _ in range(NUM_PHOTOS_PER_STACK):
             script.release_command = "RELEASE"
-            script.release(0.20, exposure=exposure)
+            script.release(release_time, exposure=exposure)
         exposure *= 2.0
 
 
