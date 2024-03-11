@@ -2,8 +2,8 @@ from eoscript import Exposure, Script
 
 # Ultimate Eclipse capture for 4m20s of totality.
 
-MIN_STEP_FAST = 0.300 # Verify your setup to see how fast you can go!
-MIN_STEP_SLOW = 0.800 # Verify your setup with USB updates.
+MIN_STEP_FAST = 0.333 # Verify your setup to see how fast you can go!
+MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates.
 
 _1 = Exposure(1)
 
@@ -110,9 +110,9 @@ _earthshine("C2")
 script.banner("C2 -> MAX: cronoa Mr. Eclispe brackets.")
 script.comment = "Mr. Eclipse bracket chart."
 script.iso = 64
-script.exposure = _1 / 15
+script.exposure = _1 / 60
 script.min_time_step = MIN_STEP_SLOW
-script.capture_bracket(13)
+script.capture_bracket(11)
 
 #------------------------------------------------------------------------------
 # Fast, manual stacks for ultimate post processing.
@@ -146,7 +146,7 @@ script.exposure = _1 / 60
 script.min_time_step = MIN_STEP_SLOW
 script.capture_bracket(13)
 script.file_comment = "C2,+,00:02:11  is Max Totality !!!"
-script.offset += 4.0 # To align center stack at max totality.
+#script.offset += 4.0 # To align center stack at max totality.
 script.capture_bracket(13)
 script.capture_bracket(13)
 
