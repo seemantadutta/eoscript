@@ -1,6 +1,6 @@
 from eoscript import Exposure, Script
 
-MIN_STEP_FAST = 0.5 # Verify your setup to see how fast you can go! Gap between consecutive shots
+MIN_STEP_FAST = 0.333 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates. Gap between USB updates
 
 _1 = Exposure(1)
@@ -40,6 +40,8 @@ def _earthshine(label):
         script.capture(exposure=exposure)
 
 
+
+# This functin works for 150ms/600 baud serial cable settings
 def _fast_manual_stacks(label, phase):
     script.banner(f"{label}: fast bursts for stacking")
     script.comment = "Fast, manual stacks"
