@@ -47,11 +47,26 @@ def _fast_manual_stacks(label, phase):
     script.phase = phase
     script.iso = 100
     NUM_PHOTOS_PER_STACK = 8
-    exposure = 1.0 / 1000
+    initial_exposure = 1.0 / 1000
+    exposure = initial_exposure
+    
+    # while exposure < 4.0:
+    #     script.exposure = exposure
+    #     script.offset += MIN_STEP_SLOW
+    #     script.send_exposure()
+    #     exposure *= 2.0
+
+
     while exposure < 4.0:
         script.exposure = exposure
-        script.offset += MIN_STEP_SLOW - MIN_STEP_FAST
+        if (exposure == initial_exposure):
+            script.offset += MIN_STEP_SLOW
+        else:
+            script.offset += MIN_STEP_SLOW
+
         script.send_exposure()
+
+
         # This is a hack for Canon, where for longer exposures, we need to give the USB more time to settle
         # before sending the RELEASE command. So we use MIN_STEP_SLOW, except for exposures larger than 1s
         # where we use (MIN_STEP_SLOW + 1.0) between SETEXP and RELEASE commands
