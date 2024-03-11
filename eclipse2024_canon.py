@@ -71,7 +71,8 @@ def _fast_manual_stacks(label, phase):
         # before sending the RELEASE command. So we use MIN_STEP_SLOW, except for exposures larger than 1s
         # where we use (MIN_STEP_SLOW + 1.0) between SETEXP and RELEASE commands
 
-        if (exposure > 1.0):
+        # Use 1.024 here because the called code will automatically convert this to usual camera stops of shutter speed
+        if (exposure > 1.024):
             script.offset += MIN_STEP_SLOW + 1.0
             release_time = 0.40
         else:
