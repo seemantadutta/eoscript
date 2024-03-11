@@ -38,7 +38,7 @@ class Script:
         self._release_command = "TAKEPIC"
         self._phase = None
         self._offset = 0.0
-        self._qualiy = Quality.raw_fjpg
+        self._qualiy = Quality.raw
         self._mirror_lock_up = 0.0  # Mirrorless cameras don't have a mirror!
         self._incremental = 'N' # Only changes in camera settings and transmitted via USB.
         self._phase_to_time = None
@@ -157,6 +157,40 @@ class Script:
         self.file_comment = f"#{width * '-'}"
         self.file_comment = f"# {message}"
         self.file_comment = f"#{width * '-'}"
+
+    def release(self, release_time = 0.10, abs_time=None, exposure=None):
+
+        # A phase must have been selected.
+        assert self._phase, "Phase hasn't been specified!"
+        assert self._camera, "Camera hasn't been specified!"
+        assert self._fstop, "F-Stop hasn't been specified!"
+        assert self._iso, "ISO hasn't been specified!"
+
+        if isinstance(abs_time, str):
+            assert self._phase_to_time, 'To use HH:MM:SS times, please pass phase times to, i.e. Script(c1 = "YYYY/MM/DD HH:MM:SS.f", ...)'
+            phase = self._phase_to_time[self._phase]
+            time = dateutil.parser.parse(f"{phase.year}/{phase.month}/{phase.day} {abs_time}")
+            self.offset = (time - phase).total_seconds()
+
+        exposure = copy.copy(exposure) if exposure else copy.copy(self._exposure)
+        if isinstance(exposure, int) or isinstance(exposure, float):
+            exposure = Exposure(exposure)
+
+        self._events.append([
+            self._release_command,
+            self._offset,
+            self._phase,
+            self._camera,
+            release_time,
+            "",
+            "",
+            "",
+            "",
+            ""
+        ])
+
+        self.offset += float(exposure) + self._min_time_step
+
 
     def capture(self, abs_time=None, exposure=None):
         # A phase must have been selected.
@@ -307,7 +341,11 @@ class Script:
                 sign = "-" if time_offset < 0 else "+"
                 hms = hours_minuts_seconds(time_offset)
                 exposure = f"{exposure}"
-                out += f"{command},{phase},{sign},{hms},{camera},{exposure:6s},{fstop:4.1f},{iso:4d},{mlu},{quality},None,{incremental},{comment}\n"
+                if command == "TAKEPIC" or command == "SETEXP":
+                    out += f"{command},{phase},{sign},{hms},{camera},{exposure:6s},{fstop:4.1f},{iso:4d},{mlu},{quality},None,{incremental},{comment}\n"
+                elif command == "RELEASE":
+                    out += f"{command},{phase},{sign},{hms},{camera},{exposure},,,,,,,\n"
+
         return out
 
     def save(self, filename):
