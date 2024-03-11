@@ -117,7 +117,7 @@ script.capture_bracket(13)
 #------------------------------------------------------------------------------
 # Fast, manual stacks for ultimate post processing.
 
-def fast_manual_stacks(label):
+def _fast_manual_stacks(label):
     script.banner(f"{label}: fast bursts for stacking")
     script.comment = "Fast, manual stacks"
     script.min_time_step = MIN_STEP_FAST
@@ -132,7 +132,7 @@ def fast_manual_stacks(label):
             script.capture(exposure=exposure)
         exposure *= 2.0
 
-fast_manual_stacks("C2 -> MAX")
+_fast_manual_stacks("C2 -> MAX")
 
 # Take some bracketed shots around totality.
 
@@ -146,13 +146,14 @@ script.exposure = _1 / 60
 script.min_time_step = MIN_STEP_SLOW
 script.capture_bracket(13)
 script.file_comment = "C2,+,00:02:11  is Max Totality !!!"
+script.offset += 4.0 # To align center stack at max totality.
 script.capture_bracket(13)
 script.capture_bracket(13)
 
 #------------------------------------------------------------------------------
 # Fast an manual stacks for ultimate post processing.
 
-fast_manual_stacks("MAX -> C3")
+_fast_manual_stacks("MAX -> C3")
 
 #------------------------------------------------------------------------------
 # C3 long exposures for earthshine
