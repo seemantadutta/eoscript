@@ -1,5 +1,17 @@
 from eoscript import Exposure, Script
 
+
+DEFAULT_ISO = 800
+DEFAULT_FSTOP = 8
+DEFAULT_SHUTTER_SPEED = 1/1000
+
+class expinfo:
+    iso = DEFAULT_ISO
+    fstop = DEFAULT_FSTOP
+    shutter = DEFAULT_SHUTTER_SPEED
+
+
+
 MIN_STEP_FAST = 0.333 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates. Gap between USB updates
 
@@ -14,18 +26,21 @@ def _setup_for_partials(phase0, phase1):
     script.min_time_step = MIN_STEP_SLOW
     script.incremental = "N"
 
-def _diamond_ring(phase, offset):
+def _diamond_ring(phase, offset, exposure):
     script.banner(f"{phase} fast exposures for diamond ring & baily's beads.")
     script.phase = phase
     script.offset = offset
     script.iso = 100
-    script.exposure = _1 / 500
-    script.min_time_step = MIN_STEP_FAST
+    script.exposure = exposure
+    script.min_time_step = 0.66
     script.comment = "fast burst"
     script.send_exposure()
     script.offset += MIN_STEP_SLOW
-    for _ in range(40):
+    script.release_command = "TAKEPIC"
+    for _ in range(4):
         script.capture()
+        exposure *= 2
+        script.exposure = exposure
 
 
 def _earthshine(label):
@@ -317,8 +332,61 @@ def _fast_manual_stacks2(label, phase):
         script.release(0.20, exposure=exposure)
 
 
+
+def _uneclisped_sun_photos(phase, offset, count, delta, banner, expinfo):
+    script.banner(f"{phase} {banner}")
+    script.phase = phase
+    script.offset = offset
+    script.iso = expinfo.iso
+    script.exposure = expinfo.shutter
+    script.fstop = expinfo.fstop
+    script.min_time_step = 300
+    script.comment = "fast burst"
+    script.release_command = "TAKEPIC"
+    for _ in range(count):
+        script.capture()
+        
+
+
 if __name__ == '__main__':
     # Ultimate Eclipse capture for 4m20s of totality.
+
+    '''
+    The EO script will have the following flow:
+
+    1. Take 3 uneclipsed sun photos, to make sure focus and exposure are good. 
+    These should be done about 30mins before C1, spaced 5 mins apart
+
+    2. Voice prompt for C1
+    
+    2. Start partials, at every 1% progress starting at C1, through C2.
+
+    3. Battery change at around 90% progress in partials
+
+    4. Voice prompt for filter removal
+
+    5. Take Bailey's beads and diamond ring shot close to C2
+
+
+    5. At C2-2 seconds, SETEXP up the C2 exposure. At C2+3, start the long exposure sequence from 4s, 1s, .5s.
+       This will take 48 photos, bracketed exposure wise and will use RELEASE
+
+    6. There is a TIME GAP from here until MAX (earthshine shots)
+
+    7. At MAX eclipse, the second half of bracket shots starting at 1/1000 are taken. This will be 56 shots, bracketed
+       exposure wise
+
+    8. There is a TIME GAP from here until C3 (Insurance shots)
+
+    9. Take Bailey's beads and diamond ring close to C3
+
+    10. Continue with partials every 1% progress
+
+    11. Battery change once more
+
+    12. Uneclipsed Sun?
+
+    '''
 
 
     # All times are UTC!!!
@@ -334,26 +402,20 @@ if __name__ == '__main__':
     )
 
     script.camera = "C5d4"
-    script.fstop = 8
 
-    _setup_for_partials("C1", "C2")
+    # phase, offset to start taking photos, count of shots, difference between each shot, text banner, exposure info
+    expinfo.fstop = 8
+    expinfo.iso = 100
+    expinfo.shutter = 1/1000
+    _uneclisped_sun_photos("C1", -1200, 3, 300, "UNECLIPSED SUN - test exposures in the field", expinfo)
 
-    # script.banner("C2 -> MAX: cronoa Mr. Eclispe brackets.")
-    # script.comment = "Mr. Eclipse bracket chart."
-    # script.iso = 100
-    # script.exposure = _1 / 60
-    # script.min_time_step = MIN_STEP_SLOW
-    # script.capture_bracket(11)
 
-    #------------------------------------------------------------------------------
-    # Fast, manual stacks for ultimate post processing.
-    #_fast_manual_stacks("C2 -> MAX", "C2")
 
-    # Generates totality exposures such that longer exposures are at closer to C2 and C3 and shorter exposures are centered at MAX
-    #_generate_main_totality_sequence("MAIN TOTALITY SEQUENCE")
 
-    # Uncomment to generate a single BIG sequence of shots, covering 13 stack of 8 images each
-    #_fast_manual_stacks("C2 -> MAX", "C2")
+    #_setup_for_partials("C1", "C2")
+
+    # C2->MAX cycle
+    _main_sequence("C2 sequence (C2->MAX)", "C2", 2, 2, 4, 1/500, "decreasing")
 
     # Single exposure of 1/1000 centered at MAX
     _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
@@ -361,8 +423,26 @@ if __name__ == '__main__':
     offset = script.offset
     _main_sequence("MAX sequence (MAX->C3)", "MAX", offset, 2, 0.002, 4)
 
-    # C2->MAX cycle
-    _main_sequence("C2 sequence (C2->MAX)", "C2", 2, 2, 4, 1/500, "decreasing")
 
 
+
+
+    #_diamond_ring("C2", -10, 1/4000)
+    
+
+
+    ''' Solar filter Test '''
+    '''
+    _diamond_ring("C2", -2, 1/1000)
+
+    _diamond_ring("C2", +5, 1/8000)
+
+    script.fstop = 16
+    _diamond_ring("C2", +10, 1/500)
+
+    script.iso = 800
+    script.fstop = 8
+    _diamond_ring("C2", +15, 1/1600)
+    '''
     script.save("eclipse2024_canon_main2024__.csv")
+    #script.save("SolarFilterTest.csv")
