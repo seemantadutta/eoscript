@@ -1,0 +1,464 @@
+# Keep these commented out to use the computed contact times of the computer.
+# Add a GPS receiver to get < 1s accurate computed contact times.
+# Event, Date, Time
+# C1,  2024/04/08,17:21:27.500000
+# C2,  2024/04/08,18:38:46.600000
+# MAX, 2024/04/08,18:40:58.000000
+# C3,  2024/04/08,18:43:09.400000
+# C4,  2024/04/08,20:01:20.900000
+#
+# C1:C2  duration: 01:17:19.100
+# C2:MAX duration: 00:02:11.400
+# MAX:C3 duration: 00:02:11.400
+# C3:4   duration: 01:18:11.500
+#
+# Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
+#------------------------------------------------------------------------------------------------------------------------
+# C1 -> C2: partials
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C1,+,00:01:59.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:02:00.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:02:01.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:10:07.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:10:08.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:10:09.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:18:15.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:18:16.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:18:17.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:26:23.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:26:24.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:26:25.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:34:31.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:34:32.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:34:33.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:42:39.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:42:40.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:42:41.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:50:47.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:50:48.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:50:49.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:58:55.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:58:56.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,00:58:57.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:07:03.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:07:04.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:07:05.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:15:18.500,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:15:19.540,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+TAKEPIC,C1,+,01:15:20.580,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C1 -> C2 partials
+#------------------------------------------------------------------------------------------------------------------------
+# C2 fast exposures for diamond ring & baily's beads.
+#------------------------------------------------------------------------------------------------------------------------
+SETEXP,C2,-,00:00:11.000,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,-,00:00:10.000,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:09.665,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:09.330,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:08.995,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:08.660,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:08.325,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:07.990,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:07.655,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:07.320,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:06.985,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:06.650,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:06.315,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:05.980,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:05.645,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:05.310,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:04.975,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:04.640,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:04.305,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:03.970,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:03.635,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:03.300,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:02.965,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:02.630,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:02.295,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:01.960,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:01.625,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:01.290,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:00.955,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:00.620,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,-,00:00:00.285,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:00.050,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:00.385,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:00.720,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:01.055,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:01.390,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:01.725,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:02.060,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:02.395,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:02.730,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C2,+,00:00:03.065,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+#------------------------------------------------------------------------------------------------------------------------
+# C2 long exposures for Earthshine
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:00:03.400,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:00:05.400,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:00:08.400,Nikon Z7,4     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:00:13.400,Nikon Z7,8     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+#------------------------------------------------------------------------------------------------------------------------
+# C2 -> MAX: cronoa Mr. Eclispe brackets.
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:00:22.400,Nikon Z7,1/2000, 8.0,  64,0.0,RAW+F-JPG,None,N,Mr. Eclipse bracket chart.  -5.000 EV Stops
+TAKEPIC,C2,+,00:00:23.401,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -4.000 EV Stops
+TAKEPIC,C2,+,00:00:24.402,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -3.000 EV Stops
+TAKEPIC,C2,+,00:00:25.404,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -2.000 EV Stops
+TAKEPIC,C2,+,00:00:26.408,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -1.000 EV Stops
+TAKEPIC,C2,+,00:00:27.416,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +0.000 EV Stops
+TAKEPIC,C2,+,00:00:28.433,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +1.000 EV Stops
+TAKEPIC,C2,+,00:00:29.466,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +2.000 EV Stops
+TAKEPIC,C2,+,00:00:30.533,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +3.000 EV Stops
+TAKEPIC,C2,+,00:00:31.666,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +4.000 EV Stops
+TAKEPIC,C2,+,00:00:32.933,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +5.000 EV Stops
+#------------------------------------------------------------------------------------------------------------------------
+# C2 -> MAX: fast bursts for stacking
+#------------------------------------------------------------------------------------------------------------------------
+SETEXP,C2,+,00:00:34.466,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:35.466,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:35.800,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:36.134,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:36.468,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:36.802,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:37.136,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:37.470,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:37.804,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:38.138,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:39.138,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:39.473,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:39.808,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:40.143,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:40.478,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:40.813,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:41.148,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:41.483,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:41.818,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:42.818,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:43.155,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:43.492,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:43.829,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:44.166,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:44.503,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:44.840,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:45.177,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:45.514,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:46.514,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:46.855,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:47.196,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:47.537,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:47.878,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:48.219,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:48.560,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:48.901,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:49.242,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:50.242,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:50.591,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:50.940,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:51.289,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:51.638,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:51.987,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:52.336,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:52.685,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:53.034,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:54.034,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:54.399,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:54.764,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:55.129,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:55.494,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:55.859,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:56.224,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:56.589,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:00:56.954,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:57.954,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:58.351,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:58.748,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:59.145,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:59.542,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:00:59.939,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:00.336,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:00.733,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:01:01.130,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:01:02.130,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:02.591,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:03.052,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:03.513,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:03.974,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:04.435,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:04.896,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:05.357,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:01:05.818,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:01:06.818,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:07.407,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:07.996,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:08.585,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:09.174,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:09.763,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:10.352,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:10.941,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:01:11.530,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:01:12.530,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:13.375,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:14.220,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:15.065,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:15.910,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:16.755,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:17.600,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:18.445,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:01:19.290,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:01:20.290,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:21.647,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:23.004,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:24.361,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:25.718,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:27.075,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:28.432,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:29.789,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:01:31.146,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:01:32.146,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:34.527,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:36.908,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:39.289,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:41.670,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:44.051,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:46.432,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:01:48.813,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+#------------------------------------------------------------------------------------------------------------------------
+# Approaching MAX Totality at C2,+,00:02:11
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:01:51.194,Nikon Z7,1/4000, 8.0,  64,0.0,RAW+F-JPG,None,N,Mr. Eclipse bracket chart.  -6.000 EV Stops
+TAKEPIC,C2,+,00:01:52.194,Nikon Z7,1/2000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -5.000 EV Stops
+TAKEPIC,C2,+,00:01:53.195,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -4.000 EV Stops
+TAKEPIC,C2,+,00:01:54.196,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -3.000 EV Stops
+TAKEPIC,C2,+,00:01:55.198,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -2.000 EV Stops
+TAKEPIC,C2,+,00:01:56.202,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -1.000 EV Stops
+TAKEPIC,C2,+,00:01:57.211,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +0.000 EV Stops
+TAKEPIC,C2,+,00:01:58.227,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +1.000 EV Stops
+TAKEPIC,C2,+,00:01:59.261,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +2.000 EV Stops
+TAKEPIC,C2,+,00:02:00.327,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +3.000 EV Stops
+TAKEPIC,C2,+,00:02:01.461,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +4.000 EV Stops
+TAKEPIC,C2,+,00:02:02.727,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +5.000 EV Stops
+TAKEPIC,C2,+,00:02:04.261,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +6.000 EV Stops
+# C2,+,00:02:11  is Max Totality !!!
+TAKEPIC,C2,+,00:02:06.327,Nikon Z7,1/4000, 8.0,  64,0.0,RAW+F-JPG,None,N,Mr. Eclipse bracket chart.  -6.000 EV Stops
+TAKEPIC,C2,+,00:02:07.327,Nikon Z7,1/2000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -5.000 EV Stops
+TAKEPIC,C2,+,00:02:08.328,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -4.000 EV Stops
+TAKEPIC,C2,+,00:02:09.329,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -3.000 EV Stops
+TAKEPIC,C2,+,00:02:10.331,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -2.000 EV Stops
+TAKEPIC,C2,+,00:02:11.335,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -1.000 EV Stops
+TAKEPIC,C2,+,00:02:12.344,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +0.000 EV Stops
+TAKEPIC,C2,+,00:02:13.360,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +1.000 EV Stops
+TAKEPIC,C2,+,00:02:14.394,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +2.000 EV Stops
+TAKEPIC,C2,+,00:02:15.460,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +3.000 EV Stops
+TAKEPIC,C2,+,00:02:16.594,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +4.000 EV Stops
+TAKEPIC,C2,+,00:02:17.860,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +5.000 EV Stops
+TAKEPIC,C2,+,00:02:19.394,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +6.000 EV Stops
+TAKEPIC,C2,+,00:02:21.460,Nikon Z7,1/4000, 8.0,  64,0.0,RAW+F-JPG,None,N,Mr. Eclipse bracket chart.  -6.000 EV Stops
+TAKEPIC,C2,+,00:02:22.461,Nikon Z7,1/2000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -5.000 EV Stops
+TAKEPIC,C2,+,00:02:23.461,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -4.000 EV Stops
+TAKEPIC,C2,+,00:02:24.462,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -3.000 EV Stops
+TAKEPIC,C2,+,00:02:25.464,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -2.000 EV Stops
+TAKEPIC,C2,+,00:02:26.468,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  -1.000 EV Stops
+TAKEPIC,C2,+,00:02:27.477,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +0.000 EV Stops
+TAKEPIC,C2,+,00:02:28.493,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +1.000 EV Stops
+TAKEPIC,C2,+,00:02:29.527,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +2.000 EV Stops
+TAKEPIC,C2,+,00:02:30.593,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +3.000 EV Stops
+TAKEPIC,C2,+,00:02:31.727,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +4.000 EV Stops
+TAKEPIC,C2,+,00:02:32.993,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +5.000 EV Stops
+TAKEPIC,C2,+,00:02:34.527,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Mr. Eclipse bracket chart.  +6.000 EV Stops
+#------------------------------------------------------------------------------------------------------------------------
+# MAX -> C3: fast bursts for stacking
+#------------------------------------------------------------------------------------------------------------------------
+SETEXP,C2,+,00:02:36.593,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:37.593,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:37.927,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:38.261,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:38.595,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:38.929,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:39.263,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:39.597,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:39.931,Nikon Z7,1/1000, 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:40.265,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:41.265,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:41.600,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:41.935,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:42.270,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:42.605,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:42.940,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:43.275,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:43.610,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:43.945,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:44.945,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:45.282,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:45.619,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:45.956,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:46.293,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:46.630,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:46.967,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:47.304,Nikon Z7,1/250 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:47.641,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:48.641,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:48.982,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:49.323,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:49.664,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:50.005,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:50.346,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:50.687,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:51.028,Nikon Z7,1/125 , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:51.369,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:52.369,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:52.718,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:53.067,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:53.416,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:53.765,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:54.114,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:54.463,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:54.812,Nikon Z7,1/60  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:55.161,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:02:56.161,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:56.526,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:56.891,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:57.256,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:57.621,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:57.986,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:58.351,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:02:58.716,Nikon Z7,1/30  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:02:59.081,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:00.081,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:00.478,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:00.875,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:01.272,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:01.669,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:02.066,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:02.463,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:02.860,Nikon Z7,1/15  , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:03:03.257,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:04.257,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:04.718,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:05.179,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:05.640,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:06.101,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:06.562,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:07.023,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:07.484,Nikon Z7,1/8   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:03:07.945,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:08.945,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:09.534,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:10.123,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:10.712,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:11.301,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:11.890,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:12.479,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:13.068,Nikon Z7,1/4   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:03:13.657,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:14.657,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:15.502,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:16.347,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:17.192,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:18.037,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:18.882,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:19.727,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:20.572,Nikon Z7,1/2   , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:03:21.417,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:22.417,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:23.774,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:25.131,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:26.488,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:27.845,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:29.202,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:30.559,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:31.916,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+SETEXP,C2,+,00:03:33.273,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:03:34.273,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:36.654,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:39.035,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:41.416,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:43.797,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:46.178,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:48.559,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+TAKEPIC,C2,+,00:03:50.940,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,Y,Fast manual stacks
+#------------------------------------------------------------------------------------------------------------------------
+# C3 long exposures for Earthshine
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:03:53.321,Nikon Z7,1     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:03:55.321,Nikon Z7,2     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:03:58.321,Nikon Z7,4     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+TAKEPIC,C2,+,00:04:03.321,Nikon Z7,8     , 8.0,  64,0.0,RAW+F-JPG,None,N,long exposures for Earthshine
+# C2,+,00:04:22 is end of totality
+#------------------------------------------------------------------------------------------------------------------------
+# C3 fast exposures for diamond ring & baily's beads.
+#------------------------------------------------------------------------------------------------------------------------
+SETEXP,C3,-,00:00:03.000,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,N,sending all camera exposure settings via USB
+TAKEPIC,C3,-,00:00:02.000,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,-,00:00:01.665,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,-,00:00:01.330,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,-,00:00:00.995,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,-,00:00:00.660,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,-,00:00:00.325,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:00.010,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:00.345,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:00.680,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:01.015,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:01.350,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:01.685,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:02.020,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:02.355,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:02.690,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:03.025,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:03.360,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:03.695,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:04.030,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:04.365,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:04.700,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:05.035,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:05.370,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:05.705,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:06.040,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:06.375,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:06.710,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:07.045,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:07.380,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:07.715,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:08.050,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:08.385,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:08.720,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:09.055,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:09.390,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:09.725,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:10.060,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:10.395,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:10.730,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+TAKEPIC,C3,+,00:00:11.065,Nikon Z7,1/500 , 8.0,  64,0.0,RAW+F-JPG,None,Y,fast burst
+#------------------------------------------------------------------------------------------------------------------------
+# C3 -> C4: partials
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C3,+,00:01:59.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:02:00.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:02:01.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:10:13.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:10:14.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:10:15.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:18:27.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:18:28.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:18:29.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:26:41.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:26:42.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:26:43.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:34:55.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:34:56.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:34:57.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:43:09.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:43:10.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:43:11.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:51:23.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:51:24.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:51:25.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:59:37.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:59:38.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,00:59:39.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:07:51.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:07:52.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:07:53.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:16:10.600,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:16:11.640,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+TAKEPIC,C3,+,01:16:12.680,Nikon Z7,1/25  , 8.0,  64,0.0,RAW+F-JPG,None,N,C3 -> C4 partials
+

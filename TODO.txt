@@ -1,0 +1,29 @@
+TODO:
+
+1. Finalize the speed of shots, make sure no exposures are missed
+2. Finalize the main script and emergency script
+3. Practice, Practice and Practice, review taken shots
+
+
+
+- Practice manual shots for partial phases AND totality
+- Decide whether to buy second tracker
+- Get laptop ready for EO use on eclipse day
+- Print PDF EO manual
+- Print Nick's checklist
+- Go over Nick's checklist 
+- Plan packing all my gear
+- Make new filter
+- find GPS time drift, set clock to actual time
+- Center the exposures with MAX eclipse : DONE
+- check if Having another card impacts the write speed: DONE: Use Rec Separately
+- Optimize 1s exposures to have only .333s gap : No need, low priority
+
+Next steps:
+- Add earthshine exposures
+- Add DR, BB, CH, PR exposures at C2 and C3
+- Add partial exposures
+- Add uneclipsed sun exposures
+- Insert voice prompts
+- Do battery swaps during partial phases
+

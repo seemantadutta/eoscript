@@ -1,0 +1,45 @@
+C1, 2024/04/08,17:52:10.5
+C2, 2024/04/08,13:38:46.6
+MAX, 2024/04/08,18:26:14.4
+C3, 2024/04/08,13:43:09.4
+C4, 2024/04/08,19:00:32.9
+RISE, 2024/04/07,23:11:05.4
+SET, 2024/04/09,11:56:42.4
+FOR,(INTERVALOMETER),0,0.500,3
+TAKEPIC,C1,-,00:01:00.0,C5d4,1/400,8.0,100,0.000,RAW,,N,Uneclipsed Sun pre-eclipse, filter on
+ENDFOR
+FOR,(INTERVALOMETER),1,0.500,3
+TAKEPIC,C4,+,00:01:00.0,C5d4,1/400,8.0,100,0.000,RAW,,N,Uneclipsed Sun post-eclipse, filter on
+ENDFOR
+FOR,(INTERVALOMETER),1,0.500,5
+TAKEPIC,C1,-,00:00:00.5,C5d4,1/400,8.0,100,0.000,RAW,,N,First contact, filter on
+ENDFOR
+FOR,(INTERVALOMETER),0,0.500,5
+TAKEPIC,C4,+,00:00:00.5,C5d4,1/400,8.0,100,0.000,RAW,,N,Fourth contact, filter on
+ENDFOR
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPRE (VAR),+,00:00:00.0,C5d4,1/400,8.0,100,0.000,RAW,,N,Partials C1-C2, filter on
+ENDFOR
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPOST (VAR),+,00:00:00.0,C5d4,1/400,8.0,100,0.000,RAW,,N,Partials C3-C4, filter on
+ENDFOR
+PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,"10 minutes" voice prompt
+PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,"5 minutes" voice prompt
+PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,"2 minutes" voice prompt
+PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,"60 seconds" voice prompt
+PLAY,C2,-,00:00:30.0,Sounds/30seconds.wav,,,,,,,,"30 seconds" voice prompt
+PLAY,C2,-,00:00:20.0,Sounds/filters_off.wav,,,,,,,,"Filters off" voice prompt
+PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,"10 seconds" voice prompt
+PLAY,C3,+,00:00:20.0,Sounds/filters_on.wav,,,,,,,,"Filters on" voice prompt
+FOR,(INTERVALOMETER),0,0.500,3
+TAKEPIC,C2,-,00:00:01.0,C5d4,1/3200,8.0,100,0.000,RAW,,N,Baily's Beads C2
+ENDFOR
+FOR,(INTERVALOMETER),1,0.500,3
+TAKEPIC,C3,+,00:00:01.0,C5d4,1/3200,8.0,100,0.000,RAW,,N,Baily's Beads C3
+ENDFOR
+FOR,(INTERVALOMETER),0,0.500,3
+TAKEPIC,C2,-,00:00:02.5,C5d4,1/50,8.0,100,0.000,RAW,,N,Diamond Ring C2
+ENDFOR
+FOR,(INTERVALOMETER),1,0.500,3
+TAKEPIC,C3,+,00:00:02.5,C5d4,1/50,8.0,100,0.000,RAW,,N,Diamond Ring C3
+ENDFOR
