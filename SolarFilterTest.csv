@@ -14,9 +14,6 @@
 #
 # Action, Date/Ref, Offset sign, Time (offset), Camera, Exposure, Aperture, ISO, MLU, Quality, Size, Incremental, Comment
 #------------------------------------------------------------------------------------------------------------------------
-# C1 -> C2: partials
-#------------------------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------------------------
 # C2 fast exposures for diamond ring & baily's beads.
 #------------------------------------------------------------------------------------------------------------------------
 SETEXP,C2,-,00:00:02.000,C5d4,1/1000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
@@ -24,7 +21,7 @@ TAKEPIC,C2,-,00:00:01.000,C5d4,1/1000, 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,-,00:00:00.339,C5d4,1/500 , 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,+,00:00:00.323,C5d4,1/250 , 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,+,00:00:00.987,C5d4,1/125 , 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:01.987,C5d4,1/60  , 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:01.655,C5d4,1/60  , 8.0, 100,0.0,RAW,None,Y,fast burst
 #------------------------------------------------------------------------------------------------------------------------
 # C2 fast exposures for diamond ring & baily's beads.
 #------------------------------------------------------------------------------------------------------------------------
@@ -33,23 +30,23 @@ TAKEPIC,C2,+,00:00:06.000,C5d4,1/8000, 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,+,00:00:06.660,C5d4,1/4000, 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,+,00:00:07.320,C5d4,1/2000, 8.0, 100,0.0,RAW,None,Y,fast burst
 TAKEPIC,C2,+,00:00:07.981,C5d4,1/1000, 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:08.642,C5d4,1/500 , 8.0, 100,0.0,RAW,None,Y,fast burst
 #------------------------------------------------------------------------------------------------------------------------
 # C2 fast exposures for diamond ring & baily's beads.
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,C2,+,00:00:10.000,C5d4,1/500 ,16.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-TAKEPIC,C2,+,00:00:11.000,C5d4,1/500 ,16.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:11.662,C5d4,1/250 ,16.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:12.326,C5d4,1/125 ,16.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:12.994,C5d4,1/60  ,16.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:13.994,C5d4,1/30  ,16.0, 100,0.0,RAW,None,Y,fast burst
+SETEXP,C2,+,00:00:12.000,C5d4,1/500 ,16.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:13.000,C5d4,1/500 ,16.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:13.662,C5d4,1/250 ,16.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:14.326,C5d4,1/125 ,16.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:14.994,C5d4,1/60  ,16.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:15.670,C5d4,1/30  ,16.0, 100,0.0,RAW,None,Y,fast burst
 #------------------------------------------------------------------------------------------------------------------------
 # C2 fast exposures for diamond ring & baily's beads.
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,C2,+,00:00:15.000,C5d4,1/1600, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-TAKEPIC,C2,+,00:00:16.000,C5d4,1/1600, 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:16.661,C5d4,1/800 , 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:17.322,C5d4,1/400 , 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:17.984,C5d4,1/200 , 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:19.984,C5d4,1/100 , 8.0, 100,0.0,RAW,None,Y,fast burst
-TAKEPIC,C2,+,00:00:21.984,C5d4,1/50 , 8.0, 100,0.0,RAW,None,Y,fast burst
+SETEXP,C2,+,00:00:18.000,C5d4,1/1600, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+TAKEPIC,C2,+,00:00:19.000,C5d4,1/1600, 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:19.661,C5d4,1/800 , 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:20.322,C5d4,1/400 , 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:20.984,C5d4,1/200 , 8.0, 100,0.0,RAW,None,Y,fast burst
+TAKEPIC,C2,+,00:00:21.649,C5d4,1/100 , 8.0, 100,0.0,RAW,None,Y,fast burst
 
