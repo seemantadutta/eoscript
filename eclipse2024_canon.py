@@ -11,9 +11,15 @@ class expinfo:
     shutter = DEFAULT_SHUTTER_SPEED
 
 
-
+# This works when using using SETEXP, RELEASE
 MIN_STEP_FAST = 0.333 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates. Gap between USB updates
+
+
+# This works when using TAKEPIC
+MIN_STEP_FAST_T = 0.900 # Verify your setup to see how fast you can go! Gap between consecutive shots
+MIN_STEP_SLOW_T = 1.000 # Verify your setup with USB updates. Gap between USB updates
+
 
 _1 = Exposure(1)
 
@@ -43,12 +49,11 @@ def _setup_for_partials(phase0, phase1):
     script.incremental = "N"
 
 def _diamond_ring(phase, offset, exposure, count = 1):
-    #script.banner(f"{phase} fast exposures for diamond ring & baily's beads.")
     script.phase = phase
     script.offset = offset
     script.iso = 100
     script.exposure = exposure
-    script.min_time_step = MIN_STEP_FAST
+    script.min_time_step = MIN_STEP_FAST_T
     script.comment = "fast burst"
     script.release_command = "TAKEPIC"
     for _ in range(count):
@@ -89,13 +94,8 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
         # 8 gives us exposures until 4s
         while exposure <= final_exposure:
             script.exposure = exposure
-            if (exposure == initial_exposure):
-                script.offset += MIN_STEP_SLOW
-            else:
-                script.offset += MIN_STEP_SLOW
-
+            script.offset += MIN_STEP_SLOW
             script.send_exposure()
-
 
             # This is a hack for Canon, where for longer exposures, we need to give the USB more time to settle
             # before sending the RELEASE command. So we use MIN_STEP_SLOW, except for exposures larger than 1s
@@ -117,11 +117,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
     else:
         while exposure >= final_exposure:
             script.exposure = exposure
-            if (exposure == initial_exposure):
-                script.offset += MIN_STEP_SLOW
-            else:
-                script.offset += MIN_STEP_SLOW
-
+            script.offset += MIN_STEP_SLOW
             script.send_exposure()
 
 
@@ -131,11 +127,12 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
 
             # Use 1.024 here because the called code will automatically convert this to usual camera stops of shutter speed
             if (exposure > 1.024):
-                script.offset += MIN_STEP_SLOW + 1.0
+                script.offset += 2
                 release_time = 0.40
                 script.min_time_step = 0.5
             else:
                 script.offset += MIN_STEP_SLOW
+                script.min_time_step = MIN_STEP_FAST
                 release_time = 0.20
 
             for _ in range(NUM_PHOTOS_PER_STACK):
@@ -415,41 +412,30 @@ if __name__ == '__main__':
         _uneclisped_sun_photos("C1", -1200, 3, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
 
         script.banner(f"C2 Baily\'s beads 1")
-        # BB 1
-        _diamond_ring("C2",-15, 1/4000)
-        _diamond_ring("C2",-14, 1/2000)
-        _diamond_ring("C2",-13, 1/1000)
-        _diamond_ring("C2",-12, 1/500)
-        _diamond_ring("C2",-11, 1/125)
+        _diamond_ring("C2", -15, 1/4000, 6)
 
-        # BB 2
         script.banner(f"C2 Baily\'s beads 2")
-        _diamond_ring("C2",-10, 1/4000)
-        _diamond_ring("C2",-9, 1/2000)
-        _diamond_ring("C2",-8, 1/1000)
-        _diamond_ring("C2",-7, 1/500)
-        _diamond_ring("C2",-6, 1/125)
+        _diamond_ring("C2", -9.4, 1/4000, 6)
 
         # DR 1, 2, 3
         script.banner(f"C2 Diamond Ring")
-        _diamond_ring("C2",-5, 1/125)
-        _diamond_ring("C2",-4, 1/60)
-        _diamond_ring("C2",-3, 1/30)
+        _diamond_ring("C2", -4, 1/125, 3)
+
 
         # Chromosphere 1, 2
         script.banner(f"C2 Chromosphere")
-        _diamond_ring("C2",-1, 1/2000)  #insurance
-        _diamond_ring("C2",0, 1/2000)
+        _diamond_ring("C2", 0, 1/2000)
 
-
+        '''
         # C2->MAX cycle
-        _main_sequence("C2 sequence (C2->MAX)", "C2", 2, 2, 4, 1/500, "decreasing")
+        _main_sequence("C2 sequence (C2->MAX)", "C2", 1, 2, 4, 1/500, "decreasing")
         # Single exposure of 1/1000 centered at MAX
         _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
         offset = script.offset
         _main_sequence("MAX sequence (MAX->C3)", "MAX", offset, 2, 0.002, 4)
+        '''
 
-
+        '''
         script.banner(f"C3 Chromosphere")
         # Chromosphere 1, 2
         _diamond_ring("C3",0, 1/2000)
@@ -477,6 +463,7 @@ if __name__ == '__main__':
         _diamond_ring("C3",+12, 1/500)
         _diamond_ring("C3",+11, 1/125)
 
+        '''
         script.save("Eclipse2024CanonMain.csv")
 
 
