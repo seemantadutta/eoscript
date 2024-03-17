@@ -58,7 +58,10 @@ def _diamond_ring(phase, offset, exposure, count = 1):
     script.release_command = "TAKEPIC"
     for _ in range(count):
         script.capture()
-        exposure *= 2
+        if (phase == "C2"):
+            exposure *= 2
+        elif (phase == "C3"):
+            exposure /= 2
         script.exposure = exposure
 
 
@@ -424,6 +427,7 @@ if __name__ == '__main__':
 
         # Chromosphere 1, 2
         script.banner(f"C2 Chromosphere")
+        _diamond_ring("C2", -1, 1/1000) #Insurance
         _diamond_ring("C2", 0, 1/2000)
 
         '''
@@ -435,35 +439,22 @@ if __name__ == '__main__':
         _main_sequence("MAX sequence (MAX->C3)", "MAX", offset, 2, 0.002, 4)
         '''
 
-        '''
+        
         script.banner(f"C3 Chromosphere")
         # Chromosphere 1, 2
-        _diamond_ring("C3",0, 1/2000)
-        _diamond_ring("C3",+1, 1/1000) #Insurance
+        _diamond_ring("C3", 0, 1/2000)
+        _diamond_ring("C3", +1, 1/1000) #Insurance
 
         script.banner(f"C3 Diamond Ring")
         # DR 1, 2, 3
-        _diamond_ring("C3",+5, 1/125)
-        _diamond_ring("C3",+4, 1/60)
-        _diamond_ring("C3",+3, 1/30)
+        _diamond_ring("C3", +2.142, 1/30, 3)
 
-        # BB 1
-        script.banner(f"C3 Baily's beads 1")
-        _diamond_ring("C3",+10, 1/4000)
-        _diamond_ring("C3",+9, 1/2000)
-        _diamond_ring("C3",+8, 1/1000)
-        _diamond_ring("C3",+7, 1/500)
-        _diamond_ring("C3",+6, 1/125)
+        script.banner(f"C3 Baily\'s beads 1")
+        _diamond_ring("C3", +4.884, 1/125, 6)
 
-        # BB 2
-        script.banner(f"C3 Baily's beads 2")
-        _diamond_ring("C3",+15, 1/4000)
-        _diamond_ring("C3",+14, 1/2000)
-        _diamond_ring("C3",+13, 1/1000)
-        _diamond_ring("C3",+12, 1/500)
-        _diamond_ring("C3",+11, 1/125)
-
-        '''
+        script.banner(f"C3 Baily\'s beads 2")
+        _diamond_ring("C3", +10.484, 1/125, 6)
+        
         script.save("Eclipse2024CanonMain.csv")
 
 
