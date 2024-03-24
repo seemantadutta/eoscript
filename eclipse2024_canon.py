@@ -12,12 +12,12 @@ class expinfo:
 
 
 # This works when using using SETEXP, RELEASE
-MIN_STEP_FAST = 0.333 # Verify your setup to see how fast you can go! Gap between consecutive shots
+MIN_STEP_FAST = 0.333 + 0.010 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates. Gap between USB updates
 
 
 # This works when using TAKEPIC
-MIN_STEP_FAST_T = 0.950 # Verify your setup to see how fast you can go! Gap between consecutive shots
+MIN_STEP_FAST_T = 1.000 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW_T = 1.000 # Verify your setup with USB updates. Gap between USB updates
 
 
@@ -54,7 +54,7 @@ def _diamond_ring(phase, offset, exposure, count = 1):
     script.iso = 100
     script.exposure = exposure
     script.min_time_step = MIN_STEP_FAST_T
-    script.comment = "fast burst"
+    script.comment = "Diamong ring, Baily's beads, Chromosphere etc. - USB"
     script.release_command = "TAKEPIC"
     # Make the first capture non-incremental, rest of them incremental
     script.incremental = "N"
@@ -74,7 +74,7 @@ def _diamond_ring_with_release(phase, offset, exposure, count = 1):
     script.iso = 100
     script.exposure = exposure
     script.min_time_step = MIN_STEP_FAST
-    script.comment = "fast burst"
+    script.comment = "Diamong ring, Baily's beads, Chromosphere etc. - RELEASE"
     script.release_command = "RELEASE"
 
     # Diamond ring will always have short exposures, so we don't need to specially
@@ -88,27 +88,27 @@ def _diamond_ring_with_release(phase, offset, exposure, count = 1):
 
 def _earthshine(label):
     script.banner(f"{label} -- Earthshine")
-    script.comment = "long exposures for Earthshine"
+    script.comment = "--- Earthshine long exposures ---"
     script.min_time_step = 2.0  # Longer exposures need more settling time
     script.incremental = "N"
     script.iso = 100
     exposure = 0.5
     script.release_command = "TAKEPIC"
-    for _ in range(4):
-        exposure *= 2
+    for _ in range(1):
+        exposure = 8
         script.capture(exposure=exposure)
 
 
 
 
-def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_exposure = .001, final_exposure = 0.001, direction = "increasing"):
+def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_exposure = .001, final_exposure = 0.001, direction = "increasing", iso = 100):
     assert direction in {"increasing", "decreasing"}
 
-    script.banner(f"{label}: fast bursts for stacking")
-    script.comment = "Fast, manual stacks"
+    script.banner(f"{label}:")
+    script.comment = label
     script.min_time_step = MIN_STEP_FAST
     script.phase = phase
-    script.iso = 100
+    script.iso = iso
     NUM_PHOTOS_PER_STACK = 8
     exposure = initial_exposure
 
@@ -383,6 +383,10 @@ def _uneclisped_sun_photos(phase, offset, count, delta, banner, expinfo):
         script.capture()
         
 
+def _insert_newlines(count = 1):
+    for _ in range(count):
+        script.newline()
+
 
 if __name__ == '__main__':
     # Ultimate Eclipse capture for 4m20s of totality.
@@ -435,62 +439,76 @@ if __name__ == '__main__':
         expinfo.iso = 100
         expinfo.shutter = 1/125
         _uneclisped_sun_photos("C1", -1200, 3, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
+        _insert_newlines(3)
 
         script.banner(f"C2 Baily\'s beads")
         #_diamond_ring("C2", -15, 1/4000, 6)
-        _diamond_ring_with_release("C2", -15, 1/4000, 28) #28 is enough to go up to Baily's beads
+        _diamond_ring_with_release("C2", -21.0    , 1/2000, 44) #28 is enough to go up to Baily's beads
+        _insert_newlines(3)
 
-        #script.banner(f"C2 Baily\'s beads 2")
-        #_diamond_ring("C2", -9.4, 1/4000, 6)
-        #_diamond_ring_with_release("C2", -9.4, 1/4000, 6)
 
         # DR 1, 2, 3
         script.banner(f"C2 Diamond Ring")
         _diamond_ring("C2", -4.8, 1/125, 3)
-        #_diamond_ring_with_release("C2", -4, 1/125, 3)
+        _insert_newlines(3)
 
 
         # Chromosphere 1, 2
         script.banner(f"C2 Chromosphere")
-        _diamond_ring("C2", -1, 1/1000) #Insurance
+        _diamond_ring("C2", -1.1, 1/1000) #Insurance
         _diamond_ring("C2", 0, 1/2000)
+        _insert_newlines(3)
 
-        
+
         # C2->MAX cycle
         _main_sequence("C2 sequence (C2->MAX)", "C2", 1, 2, 4, 1/500, "decreasing")
+        _insert_newlines(3)
 
         ###### BIG GAP HERE, approx 44s
-        script.offset += 1
-        _earthshine("Earthshine shots after C2, but before MAX")
+        script.offset += 1.5
+        _earthshine("Earthshine #1 shot after C2, but before MAX")
+        _insert_newlines(3)
+
+        o = script.offset
+        _main_sequence("C2 Back up sequence 1 (C2->MAX)", "C2", o, 1, 1/15, 2, "increasing", 400)
+        _insert_newlines(3)
+
 
         # Single exposure of 1/1000 centered at MAX
         _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
         offset = script.offset
         _main_sequence("MAX sequence (MAX->C3)", "MAX", offset, 2, 0.002, 4)
+        _insert_newlines(3)
         
-        #### BIG GAP HERE, approx. 1:14s
-        script.offset += 1
-        _earthshine("Earthshine shots after MAX, but before C3")
 
+        #### BIG GAP HERE, approx. 1:14s
+        script.offset += 1.5
+        _earthshine("Earthshine #2 shot after MAX, but before C3")
+        _insert_newlines(3)
         
+        o = script.offset
+        _main_sequence("C3 Back up sequence 2 (MAX->C3)", "MAX", o, 1, 1/30, 1/8000, "decreasing", 400)
+
+        script.offset += 1.5
+        _earthshine("Earthshine (#3) shot after MAX but before C3")
+        _insert_newlines(3)
+
         script.banner(f"C3 Chromosphere")
         # Chromosphere 1, 2
         _diamond_ring("C3", 0, 1/2000)
-        _diamond_ring("C3", +1, 1/1000) #Insurance
+        _diamond_ring("C3", +1.1, 1/1000) #Insurance
+        _insert_newlines(3)
 
         script.banner(f"C3 Diamond Ring")
         # DR 1, 2, 3
-        _diamond_ring("C3", +2, 1/30, 3)
-        #_diamond_ring_with_release("C3", +2.142, 1/125, 3)
+        _diamond_ring("C3", +2.1, 1/30, 3)
+        _insert_newlines(3)
+
 
 
         script.banner(f"C3 Baily\'s beads")
-        #_diamond_ring("C3", +4.884, 1/125, 6)
-        _diamond_ring_with_release("C3", +5.950, 1/4000, 28)
-
-        #script.banner(f"C3 Baily\'s beads 2"
-        #_diamond_ring("C3", +10.484, 1/125, 6)
-        #_diamond_ring_with_release("C3", +10.484, 1/4000, 6)
+        _diamond_ring_with_release("C3", +5.950, 1/2000, 40)
+        _insert_newlines(3)
 
         
         script.save("Eclipse2024CanonMain.csv")
@@ -515,8 +533,8 @@ ENDFOR
         f.write("PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,\"5 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,\"2 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,\"60 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:30.0,Sounds/30seconds.wav,,,,,,,,\"30 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:25.0,Sounds/filters_off.wav,,,,,,,,\"Filters off\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:40.0,Sounds/30seconds.wav,,,,,,,,\"30 seconds\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:30.0,Sounds/filters_off.wav,,,,,,,,\"Filters off\" voice prompt\n")
         f.write("PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,\"10 seconds\" voice prompt\n")
         f.write("PLAY,C3,+,00:00:25.0,Sounds/filters_on.wav,,,,,,,,\"Filters on\" voice prompt\n")
         f.write("PLAY,C3,+,00:09:20.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
@@ -529,17 +547,23 @@ ENDFOR
         script.fstop = 8
         script.iso = 100
         script.exposure = 1/1000
+        script.min_time_step = 1.200
 
-        _diamond_ring("C2", -2, 1/1000)
+        script.banner("Series 1")
+        _diamond_ring("C2", 0, 1/1000, 5)
 
-        _diamond_ring("C2", +5, 1/8000)
 
+        script.banner("Series 2")
+        _diamond_ring("C2", +8, 1/8000, 5)
+
+        script.banner("Series 3")
         script.fstop = 16
-        _diamond_ring("C2", +12, 1/500)
+        _diamond_ring("C2", 14, 1/500, 5)
 
+        script.banner("Series 4")
         script.iso = 800
         script.fstop = 8
-        _diamond_ring("C2", +18, 1/1600)
+        _diamond_ring("C2", 21, 1/1600, 5)
         
         script.save("SolarFilterTest.csv")
 

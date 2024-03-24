@@ -246,6 +246,9 @@ class Script:
         self._incremental = "Y"
 
 
+    def newline(self, width=120):
+        self.file_comment = f"#"
+
     def capture_bracket(self, num_exposures, ev_step=1):
         """
         Catpures a set of bracketed shots centerered on the current exposure
