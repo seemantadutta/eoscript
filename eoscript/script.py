@@ -181,7 +181,7 @@ class Script:
             self._offset,
             self._phase,
             self._camera,
-            release_time,
+            "",
             "",
             "",
             "",

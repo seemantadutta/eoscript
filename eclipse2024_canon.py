@@ -139,7 +139,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
                 script.release(release_time, exposure=exposure)
 
             exposure *= 2 ** ev_stops
-    else:
+    else: #decreasing
         while exposure >= final_exposure:
             script.exposure = exposure
             script.offset += MIN_STEP_SLOW
