@@ -444,7 +444,7 @@ if __name__ == '__main__':
 
         # DR 1, 2, 3
         script.banner(f"C2 Diamond Ring")
-        _diamond_ring("C2", -20, 1/250, 3)
+        _diamond_ring("C2", -20, 1/125, 3)
         _insert_newlines(3)
 
 
@@ -483,7 +483,7 @@ if __name__ == '__main__':
         _insert_newlines(3)
 
         script.banner(f"C3 Baily\'s beads")
-        _diamond_ring_with_release("C3", -3.0, 1/2000, 45)
+        _diamond_ring_with_release("C3", -2.5, 1/2000, 45)
         _insert_newlines(3)
 
         #DR 1, 2, 3
