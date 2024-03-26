@@ -12,7 +12,7 @@ class expinfo:
 
 
 # This works when using using SETEXP, RELEASE
-MIN_STEP_FAST = 0.333 + 0.010 # Verify your setup to see how fast you can go! Gap between consecutive shots
+MIN_STEP_FAST = 0.444 # Verify your setup to see how fast you can go! Gap between consecutive shots
 MIN_STEP_SLOW = 1.000 # Verify your setup with USB updates. Gap between USB updates
 
 
@@ -441,39 +441,28 @@ if __name__ == '__main__':
         _uneclisped_sun_photos("C1", -1200, 3, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
         _insert_newlines(3)
 
-        script.banner(f"C2 Baily\'s beads")
-        #_diamond_ring("C2", -15, 1/4000, 6)
-        _diamond_ring_with_release("C2", -21.0    , 1/2000, 44) #28 is enough to go up to Baily's beads
-        _insert_newlines(3)
-
 
         # DR 1, 2, 3
         script.banner(f"C2 Diamond Ring")
-        _diamond_ring("C2", -4.8, 1/125, 3)
+        _diamond_ring("C2", -20, 1/250, 3)
         _insert_newlines(3)
 
 
-        # Chromosphere 1, 2
-        script.banner(f"C2 Chromosphere")
-        _diamond_ring("C2", -1.1, 1/1000) #Insurance
-        _diamond_ring("C2", 0, 1/2000)
+        script.banner(f"C2 Baily\'s beads")
+        #_diamond_ring("C2", -15, 1/4000, 6)
+        _diamond_ring_with_release("C2", -15.0    , 1/2000, 40)
         _insert_newlines(3)
 
 
         # C2->MAX cycle
-        _main_sequence("C2 sequence (C2->MAX)", "C2", 1, 2, 4, 1/500, "decreasing")
-        _insert_newlines(3)
-
-        ###### BIG GAP HERE, approx 44s
-        script.offset += 1.5
-        _earthshine("Earthshine #1 shot after C2, but before MAX")
+        _main_sequence("C2 sequence (C2->MAX)", "C2", 3.5, 2, 4, 1/500, "decreasing")
         _insert_newlines(3)
 
         o = script.offset
         _main_sequence("C2 Back up sequence 1 (C2->MAX)", "C2", o, 1, 1/15, 2, "increasing", 400)
         _insert_newlines(3)
 
-
+        
         # Single exposure of 1/1000 centered at MAX
         _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
         offset = script.offset
@@ -482,17 +471,29 @@ if __name__ == '__main__':
         
 
         #### BIG GAP HERE, approx. 1:14s
-        script.offset += 1.5
-        _earthshine("Earthshine #2 shot after MAX, but before C3")
+        script.offset += 1.0
+        _earthshine("Earthshine #1 shot after MAX, but before C3")
         _insert_newlines(3)
         
         o = script.offset
-        _main_sequence("C3 Back up sequence 2 (MAX->C3)", "MAX", o, 1, 1/30, 1/8000, "decreasing", 400)
+        _main_sequence("C3 Back up sequence 2 (MAX->C3)", "MAX", o, 1, 1/30, 1/4000, "decreasing", 400)
 
-        script.offset += 1.5
-        _earthshine("Earthshine (#3) shot after MAX but before C3")
+        script.offset += 1.4
+        _earthshine("Earthshine #2 shot after MAX but before C3")
         _insert_newlines(3)
 
+        script.banner(f"C3 Baily\'s beads")
+        _diamond_ring_with_release("C3", -3.0, 1/2000, 45)
+        _insert_newlines(3)
+
+        #DR 1, 2, 3
+        o = script.offset + 1.2
+        script.banner(f"C3 Diamond Ring")
+        _diamond_ring("C3",o , 1/30, 3)
+        _insert_newlines(3)
+
+
+        '''
         script.banner(f"C3 Chromosphere")
         # Chromosphere 1, 2
         _diamond_ring("C3", 0, 1/2000)
@@ -509,13 +510,13 @@ if __name__ == '__main__':
         script.banner(f"C3 Baily\'s beads")
         _diamond_ring_with_release("C3", +5.950, 1/2000, 40)
         _insert_newlines(3)
-
+        '''
         
-        script.save("Eclipse2024CanonMain.csv")
+        script.save("Eclipse2024CanonMain6D.csv")
 
 
     def add_partial_progress_shots():
-        f = open("Eclipse2024CanonMain.csv", mode="a")
+        f = open("Eclipse2024CanonMain6D.csv", mode="a")
         f.write(f"""# Partial Progress shots\n
 FOR,(VAR),1.000,1.000,99.900
 TAKEPIC,MAGPRE (VAR),+,00:00:00.0,C5d4,{script.exposure},{script.fstop},{script.iso},0.000,RAW,,N,Partials C1-C2, filter on
@@ -527,7 +528,7 @@ ENDFOR
         f.close()
 
     def add_voice_prompts():
-        f = open("Eclipse2024CanonMain.csv", mode="a")
+        f = open("Eclipse2024CanonMain6D.csv", mode="a")
         f.write("PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
         f.write("PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,\"10 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,\"5 minutes\" voice prompt\n")
@@ -565,7 +566,7 @@ ENDFOR
         script.fstop = 8
         _diamond_ring("C2", 21, 1/1600, 5)
         
-        script.save("SolarFilterTest.csv")
+        script.save("SolarFilterTest6D.csv")
 
 
     #gen_solar_filter_test()
@@ -575,6 +576,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/125
-    add_partial_progress_shots()
+    #add_partial_progress_shots()
 
-    add_voice_prompts()
+    #add_voice_prompts()

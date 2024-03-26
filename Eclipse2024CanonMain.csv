@@ -442,14 +442,3 @@ RELEASE,C3,+,00:00:19.347,C5d4,,,,,,,,
 #
 #
 #
-
-PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,"Camera Battery Change" voice prompt
-PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,"10 minutes" voice prompt
-PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,"5 minutes" voice prompt
-PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,"2 minutes" voice prompt
-PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,"60 seconds" voice prompt
-PLAY,C2,-,00:00:40.0,Sounds/30seconds.wav,,,,,,,,"30 seconds" voice prompt
-PLAY,C2,-,00:00:30.0,Sounds/filters_off.wav,,,,,,,,"Filters off" voice prompt
-PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,"10 seconds" voice prompt
-PLAY,C3,+,00:00:25.0,Sounds/filters_on.wav,,,,,,,,"Filters on" voice prompt
-PLAY,C3,+,00:09:20.0,Sounds/battery_change.wav,,,,,,,,"Camera Battery Change" voice prompt

@@ -575,6 +575,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/125
-    #add_partial_progress_shots()
+    add_partial_progress_shots()
 
     add_voice_prompts()
