@@ -1,7 +1,6 @@
 from eoscript import Exposure, Script
 
-# This file should be used to generate the script for unmodded 6D or unmodded 6D mark II
-# (rental unit)
+# This file should be used to generate the script for MODDED 6D
 
 
 DEFAULT_ISO = 800
@@ -501,11 +500,11 @@ if __name__ == '__main__':
         _diamond_ring("C3",o , 1/30, 3)
         _insert_newlines(3)
         
-        script.save("Eclipse2024CanonMain6DV2.csv")
+        script.save("Eclipse2024CanonMain6DV2_modded.csv")
 
 
     def add_partial_progress_shots():
-        f = open("Eclipse2024CanonMain6DV2.csv", mode="a")
+        f = open("Eclipse2024CanonMain6DV2_modded.csv", mode="a")
         f.write(f"""# Partial Progress shots\n
 FOR,(VAR),1.000,1.000,99.900
 TAKEPIC,MAGPRE (VAR),+,00:00:00.0,C5d4,{script.exposure},{script.fstop},{script.iso},0.000,RAW,,N,Partials C1-C2, filter on
@@ -517,7 +516,7 @@ ENDFOR
         f.close()
 
     def add_voice_prompts():
-        f = open("Eclipse2024CanonMain6DV2.csv", mode="a")
+        f = open("Eclipse2024CanonMain6DV2_modded.csv", mode="a")
         f.write("PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
         f.write("PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,\"10 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,\"5 minutes\" voice prompt\n")
