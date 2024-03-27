@@ -1,5 +1,8 @@
 from eoscript import Exposure, Script
 
+# This file should be used to generate the script for unmodded 6D or unmodded 6D mark II
+# (rental unit)
+
 
 DEFAULT_ISO = 800
 DEFAULT_FSTOP = 8
@@ -154,7 +157,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
             if (exposure > 1.024):
                 script.offset += 2
                 release_time = 0.40
-                script.min_time_step = 0.5
+                script.min_time_step = 0.6
             else:
                 script.offset += MIN_STEP_SLOW
                 script.min_time_step = MIN_STEP_FAST
@@ -437,8 +440,16 @@ if __name__ == '__main__':
         # phase, offset to start taking photos, count of shots, difference between each shot, text banner, exposure info
         expinfo.fstop = 8
         expinfo.iso = 100
+        expinfo.shutter = 1/500
+        _uneclisped_sun_photos("C1", -1200, 1, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
+        _insert_newlines(3)
+
+        expinfo.shutter = 1/250
+        _uneclisped_sun_photos("C1", -1140, 1, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
+        _insert_newlines(3)
+
         expinfo.shutter = 1/125
-        _uneclisped_sun_photos("C1", -1200, 3, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
+        _uneclisped_sun_photos("C1", -1080, 1, 30, "UNECLIPSED SUN - test exposures in the field", expinfo)
         _insert_newlines(3)
 
 
@@ -454,7 +465,7 @@ if __name__ == '__main__':
 
 
         # C2->MAX cycle
-        _main_sequence("C2 Back up sequence 1 (C2->MAX)", "C2", 3.5, 1, 1/15, 2, "increasing", 400)
+        _main_sequence("C2 Back up sequence 1 (C2->MAX)", "C2", 4.0, 1, 1/15, 2, "increasing", 400)
         _insert_newlines(3)
 
         o = script.offset
@@ -465,7 +476,7 @@ if __name__ == '__main__':
         # Single exposure of 1/1000 centered at MAX
         _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
         offset = script.offset
-        _main_sequence("MAX Main sequence (MAX->C3)", "MAX", offset, 2, 0.002, 4)
+        _main_sequence("MAX Main sequence (MAX->C3)", "MAX", offset, 2, 0.002, 8)
         _insert_newlines(3)
         
 
@@ -481,7 +492,7 @@ if __name__ == '__main__':
         _insert_newlines(3)
 
         script.banner(f"C3 Baily\'s beads")
-        _diamond_ring_with_release("C3", -3.0, 1/2000, 42)
+        _diamond_ring_with_release("C3", -3.0, 1/2000, 45)
         _insert_newlines(3)
 
         #DR 1, 2, 3
@@ -553,7 +564,7 @@ ENDFOR
 
     script.fstop = 8
     script.iso = 100
-    script.exposure = 1/125
+    script.exposure = 1/250  #use 250 when using the modded 6D
     #add_partial_progress_shots()
 
-    #add_voice_prompts()
+    add_voice_prompts()
