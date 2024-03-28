@@ -505,6 +505,9 @@ if __name__ == '__main__':
 
 
     def add_partial_progress_shots():
+        script.exposure = 1/125
+        script.iso = 100
+        script.fstop = 8
         f = open("Eclipse2024CanonMain6DV2.csv", mode="a")
         f.write(f"""# Partial Progress shots\n
 FOR,(VAR),1.000,1.000,99.900
@@ -565,6 +568,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/250  #use 250 when using the modded 6D
-    #add_partial_progress_shots()
+    add_partial_progress_shots()
 
     add_voice_prompts()
