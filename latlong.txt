@@ -54,4 +54,10 @@ Diamond Ring C3
 Partials, every 1% C3
 
 
+TODO:
+1. Try shorter earthshine exposures
+2. Check filters ON/OFF times
+3. Time sync issues
+
+
 

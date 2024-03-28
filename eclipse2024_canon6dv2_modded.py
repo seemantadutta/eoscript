@@ -543,10 +543,10 @@ ENDFOR
         f.write("PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,\"5 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,\"2 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,\"60 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:40.0,Sounds/30seconds.wav,,,,,,,,\"30 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:30.0,Sounds/filters_off.wav,,,,,,,,\"Filters off\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:45.0,Sounds/45seconds.wav,,,,,,,,\"45 seconds\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:37.0,Sounds/filters_off.wav,,,,,,,,\"Filters off\" voice prompt\n")
         f.write("PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,\"10 seconds\" voice prompt\n")
-        f.write("PLAY,C3,+,00:00:25.0,Sounds/filters_on.wav,,,,,,,,\"Filters on\" voice prompt\n")
+        f.write("PLAY,C3,+,00:00:30.0,Sounds/filters_on.wav,,,,,,,,\"Filters on\" voice prompt\n")
         f.write("PLAY,C3,+,00:09:20.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
         f.close()
     
