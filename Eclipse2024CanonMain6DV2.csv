@@ -424,6 +424,15 @@ TAKEPIC,C3,+,00:00:20.252,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Bail
 #
 #
 
+# Partial Progress shots
+
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPRE (VAR),+,00:00:00.0,C5d4,1/125,8,100,0.000,RAW,,N,Partials C1-C2, filter on
+ENDFOR
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPOST (VAR),+,00:00:00.0,C5d4,1/125,8,100,0.000,RAW,,N,Partials C3-C4, filter on
+ENDFOR
+
 PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,"Camera Battery Change" voice prompt
 PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,"10 minutes" voice prompt
 PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,"5 minutes" voice prompt
