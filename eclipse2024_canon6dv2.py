@@ -453,8 +453,12 @@ if __name__ == '__main__':
         _insert_newlines(3)
 
 
-        # DR 1, 2, 3
-        script.banner(f"C2 Diamond Ring")
+        # DR 1, 2
+        script.banner(f"C2 Diamond Ring 1")
+        _diamond_ring("C2", -23.5, 1/500, 3)
+        _insert_newlines(3)
+
+        script.banner(f"C2 Diamond Ring 2")
         _diamond_ring("C2", -20, 1/125, 3)
         _insert_newlines(3)
 
@@ -495,10 +499,15 @@ if __name__ == '__main__':
         _diamond_ring_with_release("C3", -3.0, 1/2000, 45)
         _insert_newlines(3)
 
-        #DR 1, 2, 3
+        #DR 1, 2
         o = script.offset + 1.2
-        script.banner(f"C3 Diamond Ring")
+        script.banner(f"C3 Diamond Ring 1")
         _diamond_ring("C3",o , 1/30, 3)
+        _insert_newlines(3)
+
+        o = script.offset + 0.100
+        script.banner(f"C3 Diamond Ring 2")
+        _diamond_ring("C3",o , 1/125, 3)
         _insert_newlines(3)
         
         script.save("Eclipse2024CanonMain6DV2.csv")
