@@ -37,56 +37,56 @@ TAKEPIC,C1,-,00:18:00.000,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,fast burst
 #------------------------------------------------------------------------------------------------------------------------
 # C2 Diamond Ring
 #------------------------------------------------------------------------------------------------------------------------
-TAKEPIC,C2,-,00:00:20.000,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
-TAKEPIC,C2,-,00:00:18.992,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
-TAKEPIC,C2,-,00:00:17.976,C5d4,1/30  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C2,-,00:00:20.000,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C2,-,00:00:18.996,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C2,-,00:00:17.988,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 #
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
 # C2 Baily's beads
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,C2,-,00:00:16.000,C5d4,1/2000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+SETEXP,C2,-,00:00:16.000,C5d4,1/4000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
 RELEASE,C2,-,00:00:15.000,C5d4,,,,,,,,
 RELEASE,C2,-,00:00:14.556,C5d4,,,,,,,,
 RELEASE,C2,-,00:00:14.111,C5d4,,,,,,,,
 RELEASE,C2,-,00:00:13.667,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:13.222,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:12.778,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:12.333,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:11.889,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:11.444,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:11.000,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:10.555,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:10.111,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:09.666,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:09.222,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:08.777,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:08.333,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:07.888,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:07.444,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:06.999,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:06.555,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:06.110,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:05.666,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:05.221,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:04.777,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:04.332,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:03.888,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:03.443,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:02.999,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:02.554,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:02.110,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:01.665,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:01.221,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:00.776,C5d4,,,,,,,,
-RELEASE,C2,-,00:00:00.332,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:00.113,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:00.557,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:01.002,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:01.446,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:01.891,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:02.335,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:13.223,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:12.779,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:12.334,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:11.890,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:11.446,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:11.002,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:10.557,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:10.113,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:09.669,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:09.225,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:08.780,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:08.336,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:07.892,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:07.448,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:07.003,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:06.559,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:06.115,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:05.671,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:05.226,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:04.782,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:04.338,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:03.894,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:03.449,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:03.005,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:02.561,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:02.117,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:01.672,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:01.228,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:00.784,C5d4,,,,,,,,
+RELEASE,C2,-,00:00:00.340,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:00.105,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:00.549,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:00.993,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:01.437,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:01.882,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:02.326,C5d4,,,,,,,,
 #
 #
 #
@@ -144,285 +144,308 @@ RELEASE,C2,+,00:00:47.783,C5d4,,,,,,,,
 #------------------------------------------------------------------------------------------------------------------------
 # C2 Main sequence (C2->MAX):
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,C2,+,00:00:50.293,C5d4,4     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+SETEXP,C2,+,00:00:50.293,C5d4,2     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
 RELEASE,C2,+,00:00:52.293,C5d4,,,,,,,,
-RELEASE,C2,+,00:00:56.893,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:01.493,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:06.093,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:10.693,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:15.293,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:19.893,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:24.493,C5d4,,,,,,,,
-SETEXP,C2,+,00:01:30.093,C5d4,1     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,C2,+,00:01:31.093,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:32.537,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:33.981,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:35.425,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:36.869,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:38.313,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:39.757,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:41.201,C5d4,,,,,,,,
-SETEXP,C2,+,00:01:43.645,C5d4,1/4   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,C2,+,00:01:44.645,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:45.339,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:46.033,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:46.727,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:47.421,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:48.115,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:48.809,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:49.503,C5d4,,,,,,,,
-SETEXP,C2,+,00:01:51.197,C5d4,1/15  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,C2,+,00:01:52.197,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:52.704,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:53.210,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:53.717,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:54.223,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:54.730,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:55.236,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:55.743,C5d4,,,,,,,,
-SETEXP,C2,+,00:01:57.249,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,C2,+,00:01:58.249,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:58.709,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:59.169,C5d4,,,,,,,,
-RELEASE,C2,+,00:01:59.628,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:00.088,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:00.547,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:01.007,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:01.467,C5d4,,,,,,,,
-SETEXP,C2,+,00:02:02.926,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,C2,+,00:02:03.926,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:04.374,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:04.822,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:05.270,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:05.718,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:06.166,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:06.614,C5d4,,,,,,,,
-RELEASE,C2,+,00:02:07.062,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:54.893,C5d4,,,,,,,,
+RELEASE,C2,+,00:00:57.493,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:00.093,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:02.693,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:05.293,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:07.893,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:10.493,C5d4,,,,,,,,
+SETEXP,C2,+,00:01:14.093,C5d4,1/2   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,C2,+,00:01:15.093,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:16.037,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:16.981,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:17.925,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:18.869,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:19.813,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:20.757,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:21.701,C5d4,,,,,,,,
+SETEXP,C2,+,00:01:23.645,C5d4,1/8   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,C2,+,00:01:24.645,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:25.214,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:25.783,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:26.352,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:26.921,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:27.490,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:28.059,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:28.628,C5d4,,,,,,,,
+SETEXP,C2,+,00:01:30.197,C5d4,1/30  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,C2,+,00:01:31.197,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:31.673,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:32.148,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:32.623,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:33.098,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:33.574,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:34.049,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:34.524,C5d4,,,,,,,,
+SETEXP,C2,+,00:01:35.999,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,C2,+,00:01:36.999,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:37.451,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:37.903,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:38.355,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:38.807,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:39.258,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:39.710,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:40.162,C5d4,,,,,,,,
+SETEXP,C2,+,00:01:41.614,C5d4,1/500 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,C2,+,00:01:42.614,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:43.060,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:43.506,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:43.952,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:44.398,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:44.844,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:45.290,C5d4,,,,,,,,
+RELEASE,C2,+,00:01:45.736,C5d4,,,,,,,,
 #
 #
 #
+#------------------------------------------------------------------------------------------------------------------------
+# Earthshine #1 shot after C2 but before MAX -- Earthshine
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:01:47.581,C5d4,8     , 8.0, 100,0.0,RAW,None,N,--- Earthshine long exposures ---
+#------------------------------------------------------------------------------------------------------------------------
+# Earthshine #2 shot after C2 but before MAX -- Earthshine
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,+,00:01:57.581,C5d4,8     , 8.0, 100,0.0,RAW,None,N,--- Earthshine long exposures ---
+#
+#
+#
+#------------------------------------------------------------------------------------------------------------------------
+# Delta 1
+#------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------
 # MAX Single Shot:
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,MAX,-,00:00:01.000,C5d4,1/1000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+SETEXP,MAX,-,00:00:01.000,C5d4,1/2000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
 RELEASE,MAX,+,00:00:00.000,C5d4,,,,,,,,
 RELEASE,MAX,+,00:00:00.445,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:00.890,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:01.335,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:01.780,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:02.225,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:02.670,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:03.115,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:00.889,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:01.333,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:01.778,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:02.223,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:02.667,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:03.112,C5d4,,,,,,,,
 #------------------------------------------------------------------------------------------------------------------------
 # MAX Main sequence (MAX->C3):
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,MAX,+,00:00:04.560,C5d4,1/500 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:05.560,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:06.006,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:06.452,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:06.898,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:07.344,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:07.790,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:08.236,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:08.682,C5d4,,,,,,,,
-SETEXP,MAX,+,00:00:10.128,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:11.128,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:11.580,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:12.032,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:12.484,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:12.936,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:13.388,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:13.840,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:14.292,C5d4,,,,,,,,
-SETEXP,MAX,+,00:00:15.744,C5d4,1/30  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:16.744,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:17.220,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:17.696,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:18.172,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:18.648,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:19.124,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:19.600,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:20.076,C5d4,,,,,,,,
-SETEXP,MAX,+,00:00:21.552,C5d4,1/8   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:22.552,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:23.124,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:23.696,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:24.268,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:24.840,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:25.412,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:25.984,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:26.556,C5d4,,,,,,,,
-SETEXP,MAX,+,00:00:28.128,C5d4,1/2   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:29.128,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:30.084,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:31.040,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:31.996,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:32.952,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:33.908,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:34.864,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:35.820,C5d4,,,,,,,,
-SETEXP,MAX,+,00:00:37.776,C5d4,2     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:00:39.776,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:42.268,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:44.760,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:47.252,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:49.744,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:52.236,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:54.728,C5d4,,,,,,,,
-RELEASE,MAX,+,00:00:57.220,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:04.556,C5d4,1/1000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:05.556,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:06.001,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:06.446,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:06.891,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:07.336,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:07.781,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:08.226,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:08.671,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:10.116,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:11.116,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:11.564,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:12.012,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:12.460,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:12.908,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:13.356,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:13.804,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:14.252,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:15.700,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:16.700,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:17.160,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:17.620,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:18.080,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:18.540,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:19.000,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:19.460,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:19.920,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:21.380,C5d4,1/15  , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:22.380,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:22.888,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:23.396,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:23.904,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:24.412,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:24.920,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:25.428,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:25.936,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:27.444,C5d4,1/4   , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:28.444,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:29.144,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:29.844,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:30.544,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:31.244,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:31.944,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:32.644,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:33.344,C5d4,,,,,,,,
+SETEXP,MAX,+,00:00:35.044,C5d4,1     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:36.044,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:37.512,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:38.980,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:40.448,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:41.916,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:43.384,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:44.852,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:46.320,C5d4,,,,,,,,
+#------------------------------------------------------------------------------------------------------------------------
+# MAX Main sequence (MAX->C3):
+#------------------------------------------------------------------------------------------------------------------------
+SETEXP,MAX,+,00:00:50.788,C5d4,4     , 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:00:52.788,C5d4,,,,,,,,
+RELEASE,MAX,+,00:00:57.388,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:01.988,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:06.588,C5d4,,,,,,,,
 #
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
 # C3 Back up sequence 2 (MAX->C3):
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,MAX,+,00:01:01.712,C5d4,1/30  , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:02.712,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:03.189,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:03.667,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:04.144,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:04.621,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:05.099,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:05.576,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:06.053,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:07.531,C5d4,1/60  , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:08.531,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:08.991,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:09.452,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:09.913,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:10.373,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:10.834,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:11.295,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:11.755,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:13.216,C5d4,1/125 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:14.216,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:14.668,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:15.121,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:15.573,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:16.025,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:16.478,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:16.930,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:17.382,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:18.835,C5d4,1/250 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:19.835,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:20.283,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:20.731,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:21.179,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:21.627,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:22.075,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:22.524,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:22.972,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:24.420,C5d4,1/500 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:25.420,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:25.866,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:26.312,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:26.758,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:27.204,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:27.650,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:28.096,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:28.543,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:29.989,C5d4,1/1000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:30.989,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:31.434,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:31.879,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:32.324,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:32.769,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:33.214,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:33.659,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:34.104,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:35.549,C5d4,1/2000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:36.549,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:36.994,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:37.438,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:37.883,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:38.327,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:38.772,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:39.216,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:39.661,C5d4,,,,,,,,
-SETEXP,MAX,+,00:01:41.105,C5d4,1/4000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
-RELEASE,MAX,+,00:01:42.105,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:42.549,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:42.994,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:43.438,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:43.882,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:44.326,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:44.771,C5d4,,,,,,,,
-RELEASE,MAX,+,00:01:45.215,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:13.188,C5d4,1/30  , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:14.188,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:14.665,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:15.143,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:15.620,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:16.097,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:16.575,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:17.052,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:17.529,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:19.007,C5d4,1/60  , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:20.007,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:20.467,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:20.928,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:21.389,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:21.849,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:22.310,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:22.771,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:23.231,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:24.692,C5d4,1/125 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:25.692,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:26.144,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:26.597,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:27.049,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:27.501,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:27.954,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:28.406,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:28.858,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:30.311,C5d4,1/250 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:31.311,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:31.759,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:32.207,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:32.655,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:33.103,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:33.552,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:34.000,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:34.448,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:35.896,C5d4,1/500 , 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:36.896,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:37.342,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:37.788,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:38.234,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:38.680,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:39.126,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:39.573,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:40.019,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:41.465,C5d4,1/1000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:42.465,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:42.910,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:43.355,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:43.800,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:44.245,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:44.690,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:45.135,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:45.580,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:47.025,C5d4,1/2000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:48.025,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:48.470,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:48.914,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:49.359,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:49.803,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:50.248,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:50.692,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:51.137,C5d4,,,,,,,,
+SETEXP,MAX,+,00:01:52.581,C5d4,1/4000, 8.0, 400,0.0,RAW,None,N,sending all camera exposure settings via USB
+RELEASE,MAX,+,00:01:53.581,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:54.025,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:54.470,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:54.914,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:55.358,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:55.802,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:56.247,C5d4,,,,,,,,
+RELEASE,MAX,+,00:01:56.691,C5d4,,,,,,,,
 #
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
-# Earthshine #1 shot after MAX, but before C3 -- Earthshine
+# Delta 2
 #------------------------------------------------------------------------------------------------------------------------
-TAKEPIC,MAX,+,00:01:46.359,C5d4,8     , 8.0, 100,0.0,RAW,None,N,--- Earthshine long exposures ---
-#------------------------------------------------------------------------------------------------------------------------
-# Earthshine #2 shot after MAX but before C3 -- Earthshine
-#------------------------------------------------------------------------------------------------------------------------
-TAKEPIC,MAX,+,00:01:56.359,C5d4,8     , 8.0, 100,0.0,RAW,None,N,--- Earthshine long exposures ---
-#
-#
-#
 #------------------------------------------------------------------------------------------------------------------------
 # C3 Baily's beads
 #------------------------------------------------------------------------------------------------------------------------
-SETEXP,C3,-,00:00:04.000,C5d4,1/2000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
+SETEXP,C3,-,00:00:04.000,C5d4,1/4000, 8.0, 100,0.0,RAW,None,N,sending all camera exposure settings via USB
 RELEASE,C3,-,00:00:03.000,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:02.555,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:02.111,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:01.666,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:01.222,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:00.777,C5d4,,,,,,,,
-RELEASE,C3,-,00:00:00.333,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:00.112,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:00.556,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:01.001,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:01.445,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:01.890,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:02.334,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:02.779,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:03.223,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:03.668,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:04.112,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:04.557,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:05.001,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:05.446,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:05.890,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:06.334,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:06.779,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:07.223,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:07.668,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:08.112,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:08.557,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:09.001,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:09.446,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:09.890,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:10.335,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:10.779,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:11.224,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:11.668,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:12.113,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:12.557,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:13.002,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:13.446,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:13.891,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:14.335,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:14.780,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:15.224,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:15.669,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:16.113,C5d4,,,,,,,,
-RELEASE,C3,+,00:00:16.558,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:02.556,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:02.112,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:01.667,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:01.223,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:00.779,C5d4,,,,,,,,
+RELEASE,C3,-,00:00:00.335,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:00.110,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:00.554,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:00.998,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:01.442,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:01.887,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:02.331,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:02.775,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:03.219,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:03.664,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:04.108,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:04.552,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:04.996,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:05.441,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:05.885,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:06.329,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:06.774,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:07.218,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:07.662,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:08.106,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:08.551,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:08.995,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:09.439,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:09.883,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:10.328,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:10.772,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:11.216,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:11.660,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:12.105,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:12.549,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:12.993,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:13.437,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:13.882,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:14.326,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:14.770,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:15.214,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:15.659,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:16.103,C5d4,,,,,,,,
+RELEASE,C3,+,00:00:16.547,C5d4,,,,,,,,
 #
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
 # C3 Diamond Ring
 #------------------------------------------------------------------------------------------------------------------------
-TAKEPIC,C3,+,00:00:18.202,C5d4,1/30  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
-TAKEPIC,C3,+,00:00:19.236,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
-TAKEPIC,C3,+,00:00:20.252,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C3,+,00:00:18.191,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C3,+,00:00:19.208,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C3,+,00:00:20.216,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 #
 #
 #
+
+# Partial Progress shots
+
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPRE (VAR),+,00:00:00.0,C5d4,1/250,8,100,0.000,RAW,,N,Partials C1-C2, filter on
+ENDFOR
+FOR,(VAR),1.000,1.000,99.900
+TAKEPIC,MAGPOST (VAR),+,00:00:00.0,C5d4,1/250,8,100,0.000,RAW,,N,Partials C3-C4, filter on
+ENDFOR
 
 PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,"Camera Battery Change" voice prompt
 PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,"10 minutes" voice prompt

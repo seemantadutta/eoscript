@@ -6,7 +6,7 @@ from eoscript import Exposure, Script
 DEFAULT_ISO = 800
 DEFAULT_FSTOP = 8
 DEFAULT_SHUTTER_SPEED = 1/1000
-
+NUM_PHOTOS_PER_STACK = 8
 class expinfo:
     iso = DEFAULT_ISO
     fstop = DEFAULT_FSTOP
@@ -103,7 +103,7 @@ def _earthshine(label):
 
 
 
-def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_exposure = .001, final_exposure = 0.001, direction = "increasing", iso = 100):
+def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_exposure = .001, final_exposure = 0.001, direction = "increasing", iso = 100, photos_per_stack = NUM_PHOTOS_PER_STACK):
     assert direction in {"increasing", "decreasing"}
 
     script.banner(f"{label}:")
@@ -111,7 +111,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
     script.min_time_step = MIN_STEP_FAST
     script.phase = phase
     script.iso = iso
-    NUM_PHOTOS_PER_STACK = 8
+
     exposure = initial_exposure
 
     script.offset = initial_offset
@@ -136,7 +136,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
                 script.offset += MIN_STEP_SLOW
                 release_time = 0.20
 
-            for _ in range(NUM_PHOTOS_PER_STACK):
+            for _ in range(photos_per_stack):
                 script.release_command = "RELEASE"
                 script.release(release_time, exposure=exposure)
 
@@ -162,7 +162,7 @@ def _main_sequence(label, phase, initial_offset = 0, ev_stops = 1, initial_expos
                 script.min_time_step = MIN_STEP_FAST
                 release_time = 0.20
 
-            for _ in range(NUM_PHOTOS_PER_STACK):
+            for _ in range(photos_per_stack):
                 script.release_command = "RELEASE"
                 script.release(release_time, exposure=exposure)
 
@@ -454,12 +454,12 @@ if __name__ == '__main__':
 
         # DR 1, 2, 3
         script.banner(f"C2 Diamond Ring")
-        _diamond_ring("C2", -20, 1/125, 3)
+        _diamond_ring("C2", -20, 1/250, 3)
         _insert_newlines(3)
 
 
         script.banner(f"C2 Baily\'s beads")
-        _diamond_ring_with_release("C2", -15.0, 1/2000, 40)
+        _diamond_ring_with_release("C2", -15.0, 1/4000, 40)
         _insert_newlines(3)
 
 
@@ -468,42 +468,54 @@ if __name__ == '__main__':
         _insert_newlines(3)
 
         o = script.offset
-        _main_sequence("C2 Main sequence (C2->MAX)", "C2", o, 2, 4, 1/500, "decreasing")
+        _main_sequence("C2 Main sequence (C2->MAX)", "C2", o, 2, 2, 1/1000, "decreasing")
         _insert_newlines(3)
 
-        
-        # Single exposure of 1/1000 centered at MAX
-        _main_sequence("MAX Single Shot", "MAX", -2, 2, 0.001, 0.001)
+        script.offset += 1.4
+        _earthshine("Earthshine #1 shot after C2 but before MAX")
+
+        _earthshine("Earthshine #2 shot after C2 but before MAX")
+        _insert_newlines(3)
+
+        # Delta 1
+        script.banner(f"Delta 1")
+
+        # Single exposure of 1/2000 centered at MAX
+        _main_sequence("MAX Single Shot", "MAX", -2, 2, 1/2000, 1/2000)
         offset = script.offset
-        _main_sequence("MAX Main sequence (MAX->C3)", "MAX", offset, 2, 0.002, 8)
+        _main_sequence("MAX Main sequence (MAX->C3)", "MAX", offset, 2, 1/1000, 4)
+
+        # 4x4s exposures
+        offset = script.offset + 2.0
+        _main_sequence("MAX Main sequence (MAX->C3)", "MAX", offset, 2, 4, 4, "decreasing", 100, 4)
         _insert_newlines(3)
         
 
-        #### BIG GAP HERE, approx. 1:14s
         o = script.offset + 1.0
         _main_sequence("C3 Back up sequence 2 (MAX->C3)", "MAX", o, 1, 1/30, 1/4000, "decreasing", 400)
         _insert_newlines(3)
-        
-        script.offset += 0.7
-        _earthshine("Earthshine #1 shot after MAX, but before C3")
 
-        _earthshine("Earthshine #2 shot after MAX but before C3")
-        _insert_newlines(3)
+        # Delta 2
+        script.banner(f"Delta 2")
+
 
         script.banner(f"C3 Baily\'s beads")
-        _diamond_ring_with_release("C3", -3.0, 1/2000, 45)
+        _diamond_ring_with_release("C3", -3.0, 1/4000, 45)
         _insert_newlines(3)
 
         #DR 1, 2, 3
         o = script.offset + 1.2
         script.banner(f"C3 Diamond Ring")
-        _diamond_ring("C3",o , 1/30, 3)
+        _diamond_ring("C3",o , 1/60, 3)
         _insert_newlines(3)
         
         script.save("Eclipse2024CanonMain6DV2_modded.csv")
 
 
     def add_partial_progress_shots():
+        script.exposure = 1/250
+        script.iso = 100
+        script.fstop = 8
         f = open("Eclipse2024CanonMain6DV2_modded.csv", mode="a")
         f.write(f"""# Partial Progress shots\n
 FOR,(VAR),1.000,1.000,99.900
@@ -564,6 +576,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/250  #use 250 when using the modded 6D
-    #add_partial_progress_shots()
+    add_partial_progress_shots()
 
     add_voice_prompts()
