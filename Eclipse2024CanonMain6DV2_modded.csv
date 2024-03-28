@@ -35,7 +35,16 @@ TAKEPIC,C1,-,00:18:00.000,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,fast burst
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
-# C2 Diamond Ring
+# C2 Diamond Ring 1
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C2,-,00:00:23.500,C5d4,1/1000, 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C2,-,00:00:22.499,C5d4,1/500 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C2,-,00:00:21.497,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+#
+#
+#
+#------------------------------------------------------------------------------------------------------------------------
+# C2 Diamond Ring 2
 #------------------------------------------------------------------------------------------------------------------------
 TAKEPIC,C2,-,00:00:20.000,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 TAKEPIC,C2,-,00:00:18.996,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
@@ -429,11 +438,20 @@ RELEASE,C3,+,00:00:16.547,C5d4,,,,,,,,
 #
 #
 #------------------------------------------------------------------------------------------------------------------------
-# C3 Diamond Ring
+# C3 Diamond Ring 1
 #------------------------------------------------------------------------------------------------------------------------
 TAKEPIC,C3,+,00:00:18.191,C5d4,1/60  , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 TAKEPIC,C3,+,00:00:19.208,C5d4,1/125 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 TAKEPIC,C3,+,00:00:20.216,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+#
+#
+#
+#------------------------------------------------------------------------------------------------------------------------
+# C3 Diamond Ring 2
+#------------------------------------------------------------------------------------------------------------------------
+TAKEPIC,C3,+,00:00:21.320,C5d4,1/250 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C3,+,00:00:22.324,C5d4,1/500 , 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
+TAKEPIC,C3,+,00:00:23.326,C5d4,1/1000, 8.0, 100,0.0,RAW,None,N,Diamong ring Baily's beads Chromosphere etc. - USB
 #
 #
 #
