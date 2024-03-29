@@ -1,7 +1,7 @@
 from eoscript import Exposure, Script
 
 # This file should be used to generate the script for MODDED 6D
-
+# This is the file that should be used in Hillsboro, TX with 4min20s of totality
 
 DEFAULT_ISO = 800
 DEFAULT_FSTOP = 8
