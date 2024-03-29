@@ -61,3 +61,13 @@ TODO:
 
 
 
+2min script use these GPS coordinates:
+29 deg 20 42.75
+98 deg 50 56.66
+Alt 237m
+
+
+3min script use these GPS coordinates:
+29 deg 30 12.73
+98 deg 54 12.76
+Alt 316m
