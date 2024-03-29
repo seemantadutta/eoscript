@@ -1,7 +1,7 @@
 from eoscript import Exposure, Script
 
 # This file should be used to generate the script for MODDED 6D
-
+# This file is meant for SAN ANTONIO location, near Castroville, TX
 
 DEFAULT_ISO = 800
 DEFAULT_FSTOP = 8
@@ -472,6 +472,8 @@ if __name__ == '__main__':
         _main_sequence("C2 Main sequence (C2->MAX)", "C2", o, 2, 2, 1/1000, "decreasing")
         _insert_newlines(3)
 
+        script.offset += 2.5
+        _earthshine("Earthshine #1 shot after C2 but before MAX")
 
         # Delta 1
         script.banner(f"Delta 1")
@@ -569,6 +571,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/250  #use 250 when using the modded 6D
-    add_partial_progress_shots()
+    #add_partial_progress_shots()
 
     add_voice_prompts()
