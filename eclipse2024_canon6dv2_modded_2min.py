@@ -2,6 +2,7 @@ from eoscript import Exposure, Script
 
 # This file should be used to generate the script for MODDED 6D
 # This file is meant for SAN ANTONIO location, near Castroville, TX
+# with totality of around 2min
 
 DEFAULT_ISO = 800
 DEFAULT_FSTOP = 8
