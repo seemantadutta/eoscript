@@ -93,11 +93,11 @@ def _earthshine(label):
     script.comment = "--- Earthshine long exposures ---"
     script.min_time_step = 2.0  # Longer exposures need more settling time
     script.incremental = "N"
-    script.iso = 100
+    script.iso = 200
     exposure = 0.5
     script.release_command = "TAKEPIC"
     for _ in range(1):
-        exposure = 8
+        exposure = 4
         script.capture(exposure=exposure)
 
 
@@ -475,9 +475,10 @@ if __name__ == '__main__':
         _main_sequence("C2 Main sequence (C2->MAX)", "C2", o, 2, 2, 1/1000, "decreasing")
         _insert_newlines(3)
 
-        script.offset += 1.4
+        script.offset += 2.5
         _earthshine("Earthshine #1 shot after C2 but before MAX")
 
+        script.offset += 1
         _earthshine("Earthshine #2 shot after C2 but before MAX")
         _insert_newlines(3)
 
