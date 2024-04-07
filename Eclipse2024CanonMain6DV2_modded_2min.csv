@@ -321,7 +321,11 @@ PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,"5 minutes" voice prompt
 PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,"2 minutes" voice prompt
 PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,"60 seconds" voice prompt
 PLAY,C2,-,00:00:45.0,Sounds/45seconds.wav,,,,,,,,"45 seconds" voice prompt
-PLAY,C2,-,00:00:37.0,Sounds/filters_off.wav,,,,,,,,"Filters off" voice prompt
+PLAY,C2,-,00:00:37.0,Sounds/filters_off_all.wav,,,,,,,,"Filters off ALL cameras" voice prompt
+PLAY,C2,-,00:00:22.0,Sounds/startDRBB_cam2.wav,,,,,,,,"Start DR/BB on Cam 2" voice prompt
 PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,"10 seconds" voice prompt
-PLAY,C3,+,00:00:30.0,Sounds/filters_on.wav,,,,,,,,"Filters on" voice prompt
+PLAY,C2,+,00:00:02.0,Sounds/endBB_cam2.wav,,,,,,,,"End BB on Cam 2" voice prompt
+PLAY,C3,-,00:00:04.0,Sounds/startBBDR_cam2.wav,,,,,,,,"Start BB/DR on Cam2" voice prompt
+PLAY,C3,+,00:00:22.0,Sounds/startDR_cam2.wav,,,,,,,,"Start DR bracket on cam2" voice prompt
+PLAY,C3,+,00:00:35.0,Sounds/filters_on_all.wav,,,,,,,,"Filters on ALL cameras" voice prompt
 PLAY,C3,+,00:09:20.0,Sounds/battery_change.wav,,,,,,,,"Camera Battery Change" voice prompt

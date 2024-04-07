@@ -530,18 +530,38 @@ ENDFOR
 
     def add_voice_prompts():
         f = open("Eclipse2024CanonMain6DV2.csv", mode="a")
+
         f.write("PLAY,C2,-,00:14:35.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
         f.write("PLAY,C2,-,00:10:00.0,Sounds/10minutes.wav,,,,,,,,\"10 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:05:00.0,Sounds/5minutes.wav,,,,,,,,\"5 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:02:00.0,Sounds/2minutes.wav,,,,,,,,\"2 minutes\" voice prompt\n")
         f.write("PLAY,C2,-,00:01:00.0,Sounds/60seconds.wav,,,,,,,,\"60 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:40.0,Sounds/30seconds.wav,,,,,,,,\"30 seconds\" voice prompt\n")
-        f.write("PLAY,C2,-,00:00:30.0,Sounds/filters_off.wav,,,,,,,,\"Filters off\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:45.0,Sounds/45seconds.wav,,,,,,,,\"45 seconds\" voice prompt\n")
+        f.write("PLAY,C2,-,00:00:37.0,Sounds/filters_off_all.wav,,,,,,,,\"Filters off ALL cameras\" voice prompt\n")
+
+        #VP1: 22secs to start DR bracket on cam 2
+        f.write("PLAY,C2,-,00:00:22.0,Sounds/startDRBB_cam2.wav,,,,,,,,\"Start DR/BB on Cam 2\" voice prompt\n")
+
+
         f.write("PLAY,C2,-,00:00:10.0,Sounds/10seconds.wav,,,,,,,,\"10 seconds\" voice prompt\n")
-        f.write("PLAY,C3,+,00:00:25.0,Sounds/filters_on.wav,,,,,,,,\"Filters on\" voice prompt\n")
+
+        # VP2:begin
+        f.write("PLAY,C2,+,00:00:02.0,Sounds/endBB_cam2.wav,,,,,,,,\"End BB on Cam 2\" voice prompt\n")
+
+        # Manual totality sequence begins here (Custom3)
+
+        # VP3:end
+        f.write("PLAY,C3,-,00:00:04.0,Sounds/startBBDR_cam2.wav,,,,,,,,\"Start BB/DR on Cam2\" voice prompt\n")
+
+
+        # VP4 for diamond ring brackets
+        f.write("PLAY,C3,+,00:00:22.0,Sounds/startDR_cam2.wav,,,,,,,,\"Start DR bracket on cam2\" voice prompt\n")
+
+
+        f.write("PLAY,C3,+,00:00:35.0,Sounds/filters_on_all.wav,,,,,,,,\"Filters on ALL cameras\" voice prompt\n")
         f.write("PLAY,C3,+,00:09:20.0,Sounds/battery_change.wav,,,,,,,,\"Camera Battery Change\" voice prompt\n")
         f.close()
-    
+
 
     def gen_solar_filter_test():
         ''' Solar filter Test '''

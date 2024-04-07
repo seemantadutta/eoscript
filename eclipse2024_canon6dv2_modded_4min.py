@@ -609,6 +609,6 @@ ENDFOR
     script.fstop = 8
     script.iso = 100
     script.exposure = 1/250  #use 250 when using the modded 6D
-    #add_partial_progress_shots()
+    add_partial_progress_shots()
 
     add_voice_prompts()
